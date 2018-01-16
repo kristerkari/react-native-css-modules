@@ -162,7 +162,7 @@ mystyles.css:
 }
 ```
 
-App.js:
+Add style import and `BlueText` component to `App.js`:
 
 ```jsx
 /**
