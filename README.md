@@ -16,6 +16,8 @@ First of all, React Native has a very limited support for styling. There are som
 
 The supported styling depends on the element that you want to style. The best thing is to have a look at this cheat sheet when ever your are writing your styles: https://github.com/vhpoet/react-native-styling-cheat-sheet
 
+If you plan to use the same CSS files for both React Native and Web, then I suggest that you build your app "React Native first". It is much easier to build the app with React Native's styling limitations, and then make it work for web using [React Native for Web](https://github.com/necolas/react-native-web) and by adding some Web specific CSS.
+
 ### Current limitations for CSS modules in React Native
 
 Many of these will be fixed in the near future.
