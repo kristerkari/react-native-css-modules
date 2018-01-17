@@ -14,8 +14,9 @@ The idea for React Native CSS modules comes from these projects that have made a
 
 * You can share your CSS modules between React Native and React Web by using `className` property in React Native, and by using [React Native for Web](https://github.com/necolas/react-native-web) for the browser.
 * You can use CSS or Sass files.
-* Hot loading for CSS files.
+* Hot loading for CSS/Sass files.
 * [Platform-specific extensions](https://facebook.github.io/react-native/docs/platform-specific-code.html#platform-specific-extensions) for CSS, e.g. `.ios.css`, `.android.css`, `.native.css`.
+* [Supports two syntaxes for using multiple classes](https://github.com/kristerkari/babel-plugin-react-native-classname-to-style#multiple-classes) that work with React Native CSS modules and regular CSS modules.
 
 ## But there are some limitations...
 
@@ -29,7 +30,6 @@ If you plan to use the same CSS files for both React Native and Web, then I sugg
 
 Many of these will be fixed in the near future.
 
-* Limited support for [multiple classes syntax](https://github.com/css-modules/css-modules/issues/31) for `className`. Only `[styles.class1, styles.class2].join(" ")` syntax is supported currently (better support coming soon).
 * No support for other pre/postprocessors like [Less](http://lesscss.org/) or [PostCSS](http://postcss.org/) yet on React Native (planned).
 * No hot loading for Sass files that are imported with `@import` yet.
 * No `:global` or `:local` keywords for CSS modules with React Native.
