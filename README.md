@@ -22,7 +22,7 @@ If you plan to use the same CSS files for both React Native and Web, then I sugg
 
 Many of these will be fixed in the near future.
 
-* No support for multiple classes for `className` yet (support coming soon).
+* Limited support for multiple classes syntax for `className`. Only `[styles.class1, styles.class2].join(" ")` syntax is supported currently (better support coming soon).
 * No support for other pre/postprocessors like [Less](http://lesscss.org/) or [PostCSS](http://postcss.org/) yet on React Native (planned).
 * No hot loading for Sass `@import`s yet.
 * No `:global` styling for CSS modules on React Native.
