@@ -10,6 +10,13 @@ So far the only way has been to use React Native's `style` property or any of th
 
 The idea for React Native CSS modules comes from these projects that have made a lot of work for supporting CSS and CSS modules in React Native: [css-to-react-native](https://github.com/styled-components/css-to-react-native) and [react-native-sass-classname](https://github.com/daniloster/react-native-sass-classname). A big thanks to them!
 
+## Features
+
+* You can share your CSS modules between React Native and React Web by using `className` property in React Native.
+* You can use CSS or Sass files.
+* Hot loading for CSS files.
+* Platform specific extensions for CSS, e.g. `.ios.css`, `.android.css`, `.native.css`.
+
 ## But there are some limitations...
 
 First of all, React Native has a very limited support for styling. There are some styling properties that do not exist in regular CSS and some properties work differently than in CSS, so don't treat it as something that is 100% compatible with regular CSS.
