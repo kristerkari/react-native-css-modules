@@ -31,7 +31,7 @@ Many of these will be fixed in the near future.
 
 * Limited support for multiple classes syntax for `className`. Only `[styles.class1, styles.class2].join(" ")` syntax is supported currently (better support coming soon).
 * No support for other pre/postprocessors like [Less](http://lesscss.org/) or [PostCSS](http://postcss.org/) yet on React Native (planned).
-* No hot loading for Sass `@import`s yet.
+* No hot loading for Sass files that are imported with `@import` yet.
 * No `:global` styling for CSS modules on React Native.
 * No support for using [classnames](https://github.com/JedWatson/classnames) module for multiple classnames (`classnames` outputs classnames as a string).
 * No way to pass options to Sass (`node-sass`) yet (planned).
