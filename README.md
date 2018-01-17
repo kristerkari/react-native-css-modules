@@ -49,9 +49,9 @@ Have a look at the example app to see how you can use CSS modules for both React
 
 The following modules are used to implement CSS modules support for React Native:
 
-* [react-native-css-transformer](https://github.com/kristerkari/react-native-css-transformer) (or [Sass version](https://github.com/kristerkari/react-native-sass-transformer))
-* [babel-plugin-react-native-platform-specific-extensions](https://github.com/kristerkari/babel-plugin-react-native-platform-specific-extensions)
-* [babel-plugin-react-native-classname-to-style](https://github.com/kristerkari/babel-plugin-react-native-classname-to-style)
+* [react-native-css-transformer](https://github.com/kristerkari/react-native-css-transformer) (or [Sass version](https://github.com/kristerkari/react-native-sass-transformer)) - Transforms CSS code to a React Native compatible style object and handles live reloading
+* [babel-plugin-react-native-platform-specific-extensions](https://github.com/kristerkari/babel-plugin-react-native-platform-specific-extensions) - Transforms ES6 `import` statements to platform specific `require` statements if the platform specific files exist on disk.
+* [babel-plugin-react-native-classname-to-style](https://github.com/kristerkari/babel-plugin-react-native-classname-to-style) - Transforms `className` property to `style` property.
 
 ### Step 1: Install depencies to run React Native
 
