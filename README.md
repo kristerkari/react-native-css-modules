@@ -54,4 +54,4 @@ Have a look at the example app to see how you can use CSS modules for both React
 
 * [Setup CSS modules for your React Native project](docs/setup.md)
 * [Use CSS modules with Typescript or use CSS and Sass in the same project](docs/multiple-transformers.md)
-* [Setup Web compatibility for React Native CSS modules](docs/web-compatibility)
+* [Setup Web compatibility for React Native CSS modules](docs/web-compatibility.md)
