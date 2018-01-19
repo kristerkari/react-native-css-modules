@@ -99,7 +99,7 @@ npm install babel-plugin-react-native-classname-to-style babel-plugin-react-nati
 
 For CSS:
 
-```
+```json
 {
   "presets": ["react-native"],
   "plugins": [
@@ -116,7 +116,7 @@ For CSS:
 
 For Sass:
 
-```
+```json
 {
   "presets": ["react-native"],
   "plugins": [
