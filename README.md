@@ -1,6 +1,6 @@
 # React Native CSS modules
 
-<img src="images/react-nat-logo.svg" width="160"><img src="images/plus.svg" width="100"><img src="images/css-modules-logo.svg" width="170">
+<img src="images/react-native-logo.png" width="160"><img src="images/plus.svg" width="100"><img src="images/css-modules-logo.svg" width="170">
 
 A guide for using [CSS modules](https://github.com/css-modules/css-modules) (with some limitations) for both Web React and React Native.
 
