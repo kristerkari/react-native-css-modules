@@ -40,11 +40,15 @@ Many of these will be fixed in the near future.
 * No Typescript types that allow you to use `className` for React Native elements yet (planned).
 * CSS styling is limited to what React Native supports for styling: https://github.com/vhpoet/react-native-styling-cheat-sheet
 
+---
+
 ## Example App
 
 Have a look at the example app to see how you can use CSS modules for both React Native and Web using the same code.
 
 * [react-native-css-modules-example](https://github.com/kristerkari/react-native-css-modules-example)
+
+---
 
 ## Setup CSS modules for React Native
 
@@ -239,6 +243,8 @@ npm start -- --reset-cache
 
 If it throws an error for missing `node_modules/react-native/local-cli/cli.js`, just run `npm install` and then try again.
 
+---
+
 ### Using multiple transformers (e.g. Typescript + CSS modules)
 
 You might already be using a Typescript transformer in your project, so you need to create extra config in order to use it together with CSS or Sass.
@@ -286,6 +292,8 @@ module.exports.transform = function({ src, filename, options }) {
   }
 };
 ```
+
+---
 
 ## Setup Web compatibility for React Native CSS modules
 
