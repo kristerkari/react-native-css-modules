@@ -8,9 +8,7 @@ A guide for using [CSS modules](https://github.com/css-modules/css-modules) (wit
 
 React Native does not offer any kind of built-in support for loading CSS from `.css` files and using it for styling. Many of us are already using CSS modules in an existing project and want to continue using CSS modules when developing React Native apps.
 
-So far the only way has been to use React Native's `style` property or any of the available CSS-in-JS libraries.
-
-The idea for React Native CSS modules comes from these projects that have made a lot of work for supporting CSS and CSS modules in React Native: [css-to-react-native](https://github.com/styled-components/css-to-react-native) and [react-native-sass-classname](https://github.com/daniloster/react-native-sass-classname). A big thanks to them!
+So far the only way has been to use React Native's `style` property or any of the available CSS-in-JS libraries. Now you can use `className` property and keep your styles in separate CSS files.
 
 ## Features
 
@@ -57,3 +55,7 @@ Have a look at the example app to see how you can use CSS modules for both React
 * [Install Typescript types that are compatible with React Native CSS modules](https://github.com/kristerkari/react-native-types-for-css-modules#installation)
 * [Use CSS modules with Typescript or use CSS and Sass in the same project](docs/multiple-transformers.md)
 * [Setup Web compatibility for React Native CSS modules](docs/web-compatibility.md)
+
+## Special thanks
+
+The idea for React Native CSS modules comes from these projects that have made a lot of work for supporting CSS and CSS modules in React Native: [css-to-react-native](https://github.com/styled-components/css-to-react-native) and [react-native-sass-classname](https://github.com/daniloster/react-native-sass-classname). A big thanks to them!
