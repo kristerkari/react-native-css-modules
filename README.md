@@ -19,6 +19,7 @@ The idea for React Native CSS modules comes from these projects that have made a
 * Hot loading for CSS/PostCSS/Sass files.
 * [Platform-specific extensions](https://facebook.github.io/react-native/docs/platform-specific-code.html#platform-specific-extensions) for CSS, e.g. `.ios.css`, `.android.css`, `.native.css`.
 * [Supports two syntaxes for using multiple classes](https://github.com/kristerkari/babel-plugin-react-native-classname-to-style#multiple-classes) that work with React Native CSS modules and regular CSS modules.
+* [Typescript types that are compatible with React Native CSS modules](https://github.com/kristerkari/react-native-types-for-css-modules)
 
 ## But there are some limitations...
 
@@ -36,7 +37,6 @@ Many of these will be fixed in the near future.
 * No `:global` or `:local` keywords for CSS modules with React Native.
 * No support for using [classnames](https://github.com/JedWatson/classnames) module for multiple classnames (`classnames` outputs classnames as a string).
 * No way to pass options to Sass (`node-sass`) yet (planned).
-* No Typescript types that allow you to use `className` for React Native elements yet (planned).
 * CSS styling is limited to what React Native supports for styling: https://github.com/vhpoet/react-native-styling-cheat-sheet
 
 ---
@@ -54,5 +54,6 @@ Have a look at the example app to see how you can use CSS modules for both React
 * [Setup React Native CSS modules with CSS support](docs/setup-css.md)
 * [Setup React Native CSS modules with PostCSS support](docs/setup-postcss.md)
 * [Setup React Native CSS modules with Sass support](docs/setup-sass.md)
+* [Install Typescript types that are compatible with React Native CSS modules](https://github.com/kristerkari/react-native-types-for-css-modules#installation)
 * [Use CSS modules with Typescript or use CSS and Sass in the same project](docs/multiple-transformers.md)
 * [Setup Web compatibility for React Native CSS modules](docs/web-compatibility.md)
