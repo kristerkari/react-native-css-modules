@@ -22,7 +22,20 @@ npm install react-native-typescript-transformer typescript --save-dev
 
 * https://github.com/kristerkari/react-native-types-for-css-modules#installation
 
-### Step 4: Setup transformer to support CSS modules and Typescript (change the code if you need PostCSS or Sass)
+### Step 4: Check project's `tsconfig.json`
+
+Make sure that `jsx` property is set to `react-native` in Typescript's `compilerOptions`. This is important so that `className` property can be mapped to `style` property (won't work if `jsx` option is set to `react`).
+
+`tsconfig.json`:
+
+```json
+"compilerOptions": {
+  ...
+  "jsx": "react-native"
+}
+```
+
+### Step 5: Setup transformer to support CSS modules and Typescript (change the code if you need PostCSS or Sass)
 
 `rn-cli.config.js`
 
