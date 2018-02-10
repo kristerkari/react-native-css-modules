@@ -19,6 +19,16 @@ So far the only way has been to use React Native's `style` property or any of th
 * [Supports two syntaxes for using multiple classes](https://github.com/kristerkari/babel-plugin-react-native-classname-to-style#multiple-classes) that work with React Native CSS modules and regular CSS modules.
 * [Typescript types that are compatible with React Native CSS modules](https://github.com/kristerkari/react-native-types-for-css-modules)
 
+## Documentation
+
+* [Setup React Native CSS modules with CSS support](docs/setup-css.md)
+* [Setup React Native CSS modules with PostCSS support](docs/setup-postcss.md)
+* [Setup React Native CSS modules with Sass support](docs/setup-sass.md)
+* [Setup React Native CSS modules + Typescript](docs/setup-typescript.md)
+* [Use CSS and Sass in the same project](docs/multiple-transformers.md)
+* [Setup Web compatibility for React Native CSS modules](docs/web-compatibility.md)
+* [List of CSS properties supported by React Native](https://github.com/vhpoet/react-native-styling-cheat-sheet)
+
 ## But there are some limitations...
 
 First of all, React Native has a very limited support for styling. There are some styling properties that do not exist in regular CSS and some properties work differently than in CSS, so don't treat it as something that is 100% compatible with regular CSS.
@@ -45,16 +55,6 @@ Have a look at the example app to see how you can use CSS modules for both React
 * [react-native-css-modules-example](https://github.com/kristerkari/react-native-css-modules-example)
 
 ---
-
-## Documentation
-
-* [Setup React Native CSS modules with CSS support](docs/setup-css.md)
-* [Setup React Native CSS modules with PostCSS support](docs/setup-postcss.md)
-* [Setup React Native CSS modules with Sass support](docs/setup-sass.md)
-* [Setup React Native CSS modules + Typescript](docs/setup-typescript.md)
-* [Use CSS and Sass in the same project](docs/multiple-transformers.md)
-* [Setup Web compatibility for React Native CSS modules](docs/web-compatibility.md)
-* [List of CSS properties supported by React Native](https://github.com/vhpoet/react-native-styling-cheat-sheet)
 
 ## Special thanks
 
