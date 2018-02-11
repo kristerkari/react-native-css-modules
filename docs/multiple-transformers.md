@@ -1,4 +1,21 @@
-### Using multiple transformers (e.g. CSS and Sass in the same project)
+### Using CSS and Sass in the same project
+
+`.babelrc`
+
+```json
+{
+  "presets": ["react-native"],
+  "plugins": [
+    "react-native-classname-to-style",
+    [
+      "react-native-platform-specific-extensions",
+      {
+        "extensions": ["css", "scss", "sass"]
+      }
+    ]
+  ]
+}
+```
 
 `rn-cli.config.js`
 
