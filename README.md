@@ -28,6 +28,7 @@ So far the only way has been to use React Native's `style` property or any of th
 * [Use CSS and Sass in the same project](docs/multiple-transformers.md)
 * [Setup Web compatibility for React Native CSS modules](docs/web-compatibility.md)
 * [List of CSS properties supported by React Native](https://github.com/vhpoet/react-native-styling-cheat-sheet)
+* [Stylelint config for React Native CSS modules](https://github.com/kristerkari/stylelint-config-react-native-css-modules)
 
 ## But there are some limitations...
 
