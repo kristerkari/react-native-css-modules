@@ -49,11 +49,12 @@ Many of these will be fixed in the near future.
 
 ---
 
-## Example App
+## Example Apps
 
-Have a look at the example app to see how you can use CSS modules for both React Native and Web using the same code.
+Have a look at the example apps to see how you can use CSS modules for both React Native and Web using the same code.
 
-* [react-native-css-modules-example](https://github.com/kristerkari/react-native-css-modules-example)
+* [React Native CSS modules example app](https://github.com/kristerkari/react-native-css-modules-example)
+* [React Native CSS modules with Typescript example app](https://github.com/kristerkari/react-native-css-modules-with-typescript-example)
 
 ---
 

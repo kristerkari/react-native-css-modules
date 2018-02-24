@@ -1,3 +1,9 @@
+## Example app
+
+Have a look at the example app to see how you can use CSS modules and Typescript for both React Native and Web using the same code.
+
+* [react-native-css-modules-with-typescript-example](https://github.com/kristerkari/react-native-css-modules-with-typescript-example)
+
 ## Setup CSS modules for React Native + Typescript
 
 ### Step 1: Setup React Native CSS modules
