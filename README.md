@@ -19,6 +19,15 @@ So far the only way has been to use React Native's `style` property or any of th
 * [Supports two syntaxes for using multiple classes](https://github.com/kristerkari/babel-plugin-react-native-classname-to-style#multiple-classes) that work with React Native CSS modules and regular CSS modules.
 * [Typescript types that are compatible with React Native CSS modules](https://github.com/kristerkari/react-native-types-for-css-modules)
 
+## Example Apps
+
+Have a look at the example apps to see how you can use CSS modules for both React Native and Web using the same code.
+
+* [React Native CSS modules example app](https://github.com/kristerkari/react-native-css-modules-example)
+* [React Native CSS modules with Typescript example app](https://github.com/kristerkari/react-native-css-modules-with-typescript-example)
+
+---
+
 ## Documentation
 
 * [Setup React Native CSS modules with CSS support](docs/setup-css.md)
@@ -46,15 +55,6 @@ Many of these will be fixed in the near future.
 * No `:global` or `:local` keywords for CSS modules with React Native.
 * No support for using [classnames](https://github.com/JedWatson/classnames) module for multiple classnames (`classnames` outputs classnames as a string).
 * No way to pass options to Sass (`node-sass`) yet (planned).
-
----
-
-## Example Apps
-
-Have a look at the example apps to see how you can use CSS modules for both React Native and Web using the same code.
-
-* [React Native CSS modules example app](https://github.com/kristerkari/react-native-css-modules-example)
-* [React Native CSS modules with Typescript example app](https://github.com/kristerkari/react-native-css-modules-with-typescript-example)
 
 ---
 
