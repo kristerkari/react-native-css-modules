@@ -27,6 +27,7 @@ So far the only way has been to use React Native's `style` property or any of th
 Have a look at the example apps to see how you can use CSS modules for both React Native and Web using the same code.
 
 * [React Native CSS modules example app](https://github.com/kristerkari/react-native-css-modules-example)
+* [React Native CSS modules with CSS media queries example app](https://github.com/kristerkari/react-native-css-modules-with-media-queries-example)
 * [React Native CSS modules with Typescript example app](https://github.com/kristerkari/react-native-css-modules-with-typescript-example)
 
 ## Documentation
