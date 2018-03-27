@@ -100,7 +100,7 @@ Add style import and `BlueText` component to `App.js`:
 ```jsx
 import React, { Component } from "react";
 import { Text, View } from "react-native";
-const styles = require("./styles.css");
+import styles from "./styles.css";
 
 const BlueText = () => {
   return <Text className={styles.blue}>Blue Text</Text>;
