@@ -1,6 +1,6 @@
 # React Native CSS modules
 
-**Quick links:** **[Features](#features)** • **[Documentation](https://github.com/kristerkari/react-native-css-modules#documentation)** • **[Examples](#example-apps)**
+**Quick links:** **[Features](#features)** • **[Documentation](https://github.com/kristerkari/react-native-css-modules#documentation)** • **[Examples](#react-native-css -modules-example-apps)**
 
 <a href="https://facebook.github.io/react-native/"><img src="images/react-native-logo.png" width="160"></a><img src="images/plus.svg" width="100"><a href="https://github.com/css-modules/css-modules"><img src="images/css-modules-logo.svg" width="170"></a>
 
@@ -22,23 +22,28 @@ So far the only way has been to use React Native's `style` property or any of th
 * [Typescript types that are compatible with React Native CSS modules](https://github.com/kristerkari/react-native-types-for-css-modules)
 * [Custom stylelint config for React Native CSS modules](https://github.com/kristerkari/stylelint-config-react-native-css-modules)
 
-## Example Apps
+## React Native CSS modules Example Apps
 
 Have a look at the example apps to see how you can use CSS modules for both React Native and Web using the same code.
 
-* [React Native CSS modules example app](https://github.com/kristerkari/react-native-css-modules-example)
-* [React Native CSS modules with CSS media queries example app](https://github.com/kristerkari/react-native-css-modules-with-media-queries-example)
-* [React Native CSS modules with Typescript example app](https://github.com/kristerkari/react-native-css-modules-with-typescript-example)
+* **[Example app](https://github.com/kristerkari/react-native-css-modules-example)**
+* **[CSS Media Queries example app](https://github.com/kristerkari/react-native-css-modules-with-media-queries-example)**
+* **[Typescript example app](https://github.com/kristerkari/react-native-css-modules-with-typescript-example)**
 
 ## Documentation
 
-* [Setup React Native CSS modules with CSS support](docs/setup-css.md)
-* [Setup React Native CSS modules with PostCSS support](docs/setup-postcss.md)
-* [Setup React Native CSS modules with Sass support](docs/setup-sass.md)
-* [Setup React Native CSS modules + CSS media queries](docs/setup-media-queries.md)
-* [Setup React Native CSS modules + Typescript](docs/setup-typescript.md)
+#### Setup
+
+* [Setup CSS modules with CSS support](docs/setup-css.md)
+* [Setup CSS modules with PostCSS support](docs/setup-postcss.md)
+* [Setup CSS modules with Sass support](docs/setup-sass.md)
+* [Setup CSS modules + CSS media queries](docs/setup-media-queries.md)
+* [Setup CSS modules + Typescript](docs/setup-typescript.md)
 * [Use CSS and Sass in the same project](docs/multiple-transformers.md)
 * [Setup Web compatibility for React Native CSS modules](docs/web-compatibility.md)
+
+#### Other docs
+
 * [Stylelint config for React Native CSS modules](https://github.com/kristerkari/stylelint-config-react-native-css-modules)
 * [List of CSS properties supported by React Native](https://github.com/vhpoet/react-native-styling-cheat-sheet)
 * [List of React Native CSS modules limitations](docs/limitations.md)
