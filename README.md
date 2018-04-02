@@ -16,7 +16,7 @@ So far the only way has been to use React Native's `style` property or any of th
 
 * You can share your CSS modules between React Native and React Web by using `className` property in React Native, and by using [React Native for Web](https://github.com/necolas/react-native-web) for the browser.
 * Supports [CSS](https://github.com/kristerkari/react-native-css-transformer), [PostCSS](https://github.com/kristerkari/react-native-postcss-transformer), [Sass](https://github.com/kristerkari/react-native-sass-transformer) and [Stylus](https://github.com/kristerkari/react-native-stylus-transformer).
-* Hot loading for CSS/PostCSS/Sass files.
+* Hot loading for CSS/PostCSS/Sass/Stylus files.
 * [Platform-specific extensions](https://facebook.github.io/react-native/docs/platform-specific-code.html#platform-specific-extensions) for CSS, e.g. `.ios.css`, `.android.css`, `.native.css`.
 * [Supports 2 syntaxes for using multiple CSS classes](https://github.com/kristerkari/babel-plugin-react-native-classname-to-style#multiple-classes) that work with React Native CSS modules and regular CSS modules.
 * Support for CSS Media Queries (not by default, needs to be enabled).
