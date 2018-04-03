@@ -50,8 +50,7 @@ module.exports.transform = function({ src, filename, options }) {
     return sassTransformer.transform({ src, filename, options });
   } else if (filename.endsWith(".css")) {
     return cssTransformer.transform({ src, filename, options });
-  } else {
-    return upstreamTransformer.transform({ src, filename, options });
   }
+  return upstreamTransformer.transform({ src, filename, options });
 };
 ```

@@ -76,8 +76,7 @@ module.exports.transform = function({ src, filename, options }) {
     return cssTransformer.transform({ src, filename, options });
   } else if (filename.endsWith(".ts") || filename.endsWith(".tsx")) {
     return typescriptTransformer.transform({ src, filename, options });
-  } else {
-    return upstreamTransformer.transform({ src, filename, options });
   }
+  return upstreamTransformer.transform({ src, filename, options });
 };
 ```

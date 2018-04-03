@@ -95,9 +95,8 @@ var postCSSExtensions = ["css", "pcss"]; // <-- Add other extensions if needed.
 module.exports.transform = function({ src, filename, options }) {
   if (postCSSExtensions.some(ext => filename.endsWith("." + ext))) {
     return postcssTransformer.transform({ src, filename, options });
-  } else {
-    return upstreamTransformer.transform({ src, filename, options });
   }
+  return upstreamTransformer.transform({ src, filename, options });
 };
 ```
 
