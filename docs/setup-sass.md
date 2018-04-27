@@ -67,8 +67,21 @@ module.exports = {
   },
   getSourceExts() {
     return ["scss", "sass"];
-  },
+  }
 };
+```
+
+...or if you are using [Expo](https://expo.io/), in `app.json`:
+
+```json
+{
+  "expo": {
+    "packagerOpts": {
+      "sourceExts": ["scss", "sass"],
+      "transformer": "node_modules/react-native-sass-transformer/index.js"
+    }
+  }
+}
 ```
 
 ### Step 6: Add some Sass to your project and use it inside a React component
