@@ -67,8 +67,21 @@ module.exports = {
   },
   getSourceExts() {
     return ["css"];
-  },
+  }
 };
+```
+
+...or if you are using [Expo](https://expo.io/), in `app.json`:
+
+```json
+{
+  "expo": {
+    "packagerOpts": {
+      "sourceExts": ["css"],
+      "transformer": "node_modules/react-native-css-transformer/index.js"
+    }
+  }
+}
 ```
 
 ### Step 6: Add some CSS to your project and use it inside a React component

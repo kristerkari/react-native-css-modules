@@ -67,8 +67,21 @@ module.exports = {
   },
   getSourceExts() {
     return ["less"];
-  },
+  }
 };
+```
+
+...or if you are using [Expo](https://expo.io/), in `app.json`:
+
+```json
+{
+  "expo": {
+    "packagerOpts": {
+      "sourceExts": ["less"],
+      "transformer": "node_modules/react-native-less-transformer/index.js"
+    }
+  }
+}
 ```
 
 ### Step 6: Add some Less to your project and use it inside a React component

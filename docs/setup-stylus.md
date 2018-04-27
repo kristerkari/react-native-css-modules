@@ -67,8 +67,21 @@ module.exports = {
   },
   getSourceExts() {
     return ["styl"];
-  },
+  }
 };
+```
+
+...or if you are using [Expo](https://expo.io/), in `app.json`:
+
+```json
+{
+  "expo": {
+    "packagerOpts": {
+      "sourceExts": ["styl"],
+      "transformer": "node_modules/react-native-stylus-transformer/index.js"
+    }
+  }
+}
 ```
 
 ### Step 6: Add some Stylus to your project and use it inside a React component
