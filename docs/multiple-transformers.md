@@ -25,8 +25,8 @@ module.exports = {
     return require.resolve("./transformer.js");
   },
   getSourceExts() {
-    return ["scss", "sass", "css"];
-  },
+    return ["js", "jsx", "scss", "sass", "css"];
+  }
 };
 ```
 

@@ -66,7 +66,7 @@ module.exports = {
     return require.resolve("react-native-less-transformer");
   },
   getSourceExts() {
-    return ["less"];
+    return ["js", "jsx", "less"];
   }
 };
 ```
@@ -77,7 +77,7 @@ module.exports = {
 {
   "expo": {
     "packagerOpts": {
-      "sourceExts": ["less"],
+      "sourceExts": ["js", "jsx", "less"],
       "transformer": "node_modules/react-native-less-transformer/index.js"
     }
   }

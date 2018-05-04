@@ -72,7 +72,7 @@ module.exports = {
     return require.resolve("./postcss-transformer.js");
   },
   getSourceExts() {
-    return ["css", "pcss"]; // <-- Add other extensions if needed.
+    return ["js", "jsx", "css", "pcss"]; // <-- Add other extensions if needed.
   }
 };
 ```
@@ -83,7 +83,7 @@ module.exports = {
 {
   "expo": {
     "packagerOpts": {
-      "sourceExts": ["css", "pcss"],
+      "sourceExts": ["js", "jsx", "css", "pcss"],
       "transformer": "./postcss-transformer.js"
     }
   }
