@@ -66,7 +66,7 @@ module.exports = {
     return require.resolve("react-native-css-transformer");
   },
   getSourceExts() {
-    return ["css"];
+    return ["js", "jsx", "css"];
   }
 };
 ```
@@ -77,7 +77,7 @@ module.exports = {
 {
   "expo": {
     "packagerOpts": {
-      "sourceExts": ["css"],
+      "sourceExts": ["js", "jsx", "css"],
       "transformer": "node_modules/react-native-css-transformer/index.js"
     }
   }

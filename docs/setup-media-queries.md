@@ -66,9 +66,22 @@ module.exports = {
     return require.resolve("react-native-css-transformer");
   },
   getSourceExts() {
-    return ["css"];
-  },
+    return ["js", "jsx", "css"];
+  }
 };
+```
+
+...or if you are using [Expo](https://expo.io/), in `app.json`:
+
+```json
+{
+  "expo": {
+    "packagerOpts": {
+      "sourceExts": ["js", "jsx", "css"],
+      "transformer": "node_modules/react-native-css-transformer/index.js"
+    }
+  }
+}
 ```
 
 ### Step 6: Add some CSS with media queries to your project and use it inside a React component

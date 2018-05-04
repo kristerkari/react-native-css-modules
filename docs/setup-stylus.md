@@ -66,7 +66,7 @@ module.exports = {
     return require.resolve("react-native-stylus-transformer");
   },
   getSourceExts() {
-    return ["styl"];
+    return ["js", "jsx", "styl"];
   }
 };
 ```
@@ -77,7 +77,7 @@ module.exports = {
 {
   "expo": {
     "packagerOpts": {
-      "sourceExts": ["styl"],
+      "sourceExts": ["js", "jsx", "styl"],
       "transformer": "node_modules/react-native-stylus-transformer/index.js"
     }
   }
