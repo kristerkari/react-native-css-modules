@@ -1,6 +1,6 @@
 ## Limitations
 
-First of all, React Native has a very limited support for styling. There are some styling properties that do not exist in regular CSS and some properties work differently than in CSS, so don't treat it as something that is 100% compatible with regular CSS.
+First of all, React Native's styling works a bit differently compared to regular CSS. There are some styling properties that do not exist in regular CSS. Some properties can only be applied to a view, some properties only to a text element, so don't treat it as something that is 100% compatible with regular CSS.
 
 The supported styling depends on the element that you want to style. The best thing is to have a look at this cheat sheet when ever your are writing your styles: https://github.com/vhpoet/react-native-styling-cheat-sheet
 
