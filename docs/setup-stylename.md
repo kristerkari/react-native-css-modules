@@ -103,7 +103,7 @@ module.exports = {
   background-color: #f5fcff;
 }
 
-.blue {
+.blue-text {
   color: blue;
   font-size: 30px;
 }
@@ -117,7 +117,7 @@ import { Text, View } from "react-native";
 import "./styles.css";
 
 const BlueText = () => {
-  return <Text styleName="blue">Blue Text</Text>;
+  return <Text styleName="blue-text">Blue Text</Text>;
 };
 
 export default class App extends Component<{}> {
