@@ -58,7 +58,7 @@ npm install babel-plugin-react-native-classname-to-style babel-plugin-react-nati
 
 ### Step 5: Setup `rn-cli.config.js` in your project
 
-Add this to your `rn-cli.config.js` (make one if you don't have one already):
+Add this to `rn-cli.config.js` in your project's root (create the file if you don't have one already):
 
 ```js
 module.exports = {

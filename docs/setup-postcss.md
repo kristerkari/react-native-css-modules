@@ -64,7 +64,7 @@ Add your PostCSS configuration to [one of the supported config formats](https://
 
 ### Step 6: Setup `rn-cli.config.js` in your project
 
-Add this to your `rn-cli.config.js` (make one to your project's root if you don't have one already):
+Add this to `rn-cli.config.js` in your project's root (create the file if you don't have one already):
 
 ```js
 module.exports = {
