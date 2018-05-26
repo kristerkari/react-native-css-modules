@@ -1,5 +1,7 @@
 ## Setup CSS modules for React Native (with styleName syntax)
 
+The `styleName` attribute and syntax are based on [babel-plugin-react-css-modules](https://github.com/gajus/babel-plugin-react-css-modules#conventions).
+
 The following modules are used to implement CSS modules with `styleName` attribute support for React Native:
 
 * [react-native-css-transformer](https://github.com/kristerkari/react-native-css-transformer) - Transforms CSS to a React Native compatible style object and handles live reloading
