@@ -18,7 +18,7 @@ So far the only way has been to use React Native's `style` property or any of th
 - :computer: Supports responsive CSS features: CSS Media Queries and CSS Viewport Units.
 - :globe_with_meridians: [Platform-specific extensions](https://facebook.github.io/react-native/docs/platform-specific-code.html#platform-specific-extensions) for CSS, e.g. `styles.ios.css`, `styles.android.css`, `styles.native.css`.
 - :tophat: Support for `styleName` attribute that allows you to use CSS class names as strings, and allows hyphens in class names.
-- :package: [Typescript types that are compatible with React Native CSS modules](https://github.com/kristerkari/react-native-types-for-css-modules)
+- :package: [Typescript typings that are compatible with React Native CSS modules](https://github.com/kristerkari/react-native-types-for-css-modules)
 - :mag: [Custom stylelint config for React Native CSS modules](https://github.com/kristerkari/stylelint-config-react-native-css-modules)
 
 ## Example Apps
