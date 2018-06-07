@@ -1,6 +1,6 @@
 ## Setup CSS modules for React Native (with CSS support)
 
-The following modules are used to implement CSS modules support for React Native:
+Following libraries are needed:
 
 - [react-native-css-transformer](https://github.com/kristerkari/react-native-css-transformer) - Transforms CSS to a React Native compatible style object and handles live reloading
 - [babel-plugin-react-native-platform-specific-extensions](https://github.com/kristerkari/babel-plugin-react-native-platform-specific-extensions) - Transforms ES6 `import` statements to platform specific `require` statements if the platform specific files exist on disk.
