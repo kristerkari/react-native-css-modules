@@ -45,7 +45,7 @@ Have a look at the example apps to see how you can use CSS modules for both Reac
 
 #### Other setup documentation
 
-- **[Setup CSS modules + CSS media queries](docs/setup-media-queries.md)**
+- **[Setup CSS modules with responsive CSS support (CSS media queries & CSS viewport units)](docs/setup-responsive.md)**
 - **[Setup CSS modules + Typescript](docs/setup-typescript.md)**
 - **[Setup CSS modules with styleName attribute (use className as a string)](docs/setup-stylename.md)**
 - **[Use CSS and Sass in the same project](docs/multiple-transformers.md)**

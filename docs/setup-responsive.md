@@ -1,16 +1,16 @@
-## Setup CSS modules for React Native (with CSS Media Queries support)
+## Setup CSS modules for React Native (with CSS Media Queries & CSS Viewport Units support)
 
-The following modules are used to implement CSS modules with CSS media queries support for React Native:
+The following modules are used to implement CSS modules with CSS media queries and CSS viewport units support for React Native:
 
-* [react-native-css-transformer](https://github.com/kristerkari/react-native-css-transformer) - Transforms CSS to a React Native compatible style object and handles live reloading
-* [babel-plugin-react-native-platform-specific-extensions](https://github.com/kristerkari/babel-plugin-react-native-platform-specific-extensions) - Transforms ES6 `import` statements to platform specific `require` statements if the platform specific files exist on disk.
-* [babel-plugin-react-native-classname-to-dynamic-style](https://github.com/kristerkari/babel-plugin-react-native-classname-to-dynamic-style) - Transforms `className` property to `style` property and matches media queries at runtime with React Native.
+- [react-native-css-transformer](https://github.com/kristerkari/react-native-css-transformer) - Transforms CSS to a React Native compatible style object and handles live reloading
+- [babel-plugin-react-native-platform-specific-extensions](https://github.com/kristerkari/babel-plugin-react-native-platform-specific-extensions) - Transforms ES6 `import` statements to platform specific `require` statements if the platform specific files exist on disk.
+- [babel-plugin-react-native-classname-to-dynamic-style](https://github.com/kristerkari/babel-plugin-react-native-classname-to-dynamic-style) - Transforms `className` property to `style` property and matches dynamic styles (media queries and viewport units) at runtime with React Native.
 
 ### Step 1: Install depencies to run React Native
 
 Make sure that you have `react-native-cli` installed and [XCode](https://developer.apple.com/xcode/)/[Android Studio](https://developer.android.com/studio/index.html) installed and working.
 
-* Go to "Building Projects with Native Code" tab and follow the guide: https://facebook.github.io/react-native/docs/getting-started.html
+- Go to "Building Projects with Native Code" tab and follow the guide: https://facebook.github.io/react-native/docs/getting-started.html
 
 ### Step 2: Create a new React Native app and test that it works
 
@@ -98,11 +98,12 @@ module.exports = {
 
 .blue {
   color: blue;
-  font-size: 30px;
+  font-size: 3vmax;
 }
 
 @media (orientation: landscape) {
   .blue {
+    color: red;
     font-size: 10px;
   }
 }
