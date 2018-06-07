@@ -14,7 +14,7 @@ So far the only way has been to use React Native's `style` property or any of th
 
 - :tada: You can share your CSS modules between React Native and React Web by using `className` property in React Native, and by using [React Native for Web](https://github.com/necolas/react-native-web) for the browser.
 - :ok_hand: Supports [CSS](https://github.com/kristerkari/react-native-css-transformer), [PostCSS](https://github.com/kristerkari/react-native-postcss-transformer), [Sass](https://github.com/kristerkari/react-native-sass-transformer), [Less](https://github.com/kristerkari/react-native-less-transformer) and [Stylus](https://github.com/kristerkari/react-native-stylus-transformer).
-- :fire: Hot loading of CSS.
+- :fire: CSS Hot loading (live reloading).
 - :computer: Supports responsive CSS features: CSS Media Queries and CSS Viewport Units.
 - :globe_with_meridians: [Platform-specific extensions](https://facebook.github.io/react-native/docs/platform-specific-code.html#platform-specific-extensions) for CSS, e.g. `styles.ios.css`, `styles.android.css`, `styles.native.css`.
 - :tophat: Support for `styleName` attribute that allows you to use CSS class names as strings, and allows hyphens in class names.
