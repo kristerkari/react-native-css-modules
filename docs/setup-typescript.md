@@ -1,4 +1,4 @@
-Have a look at the example app to see how you can use CSS modules and Typescript for both React Native and web browsers using the same code.
+_Have a look at the example app to see how you can use CSS modules and Typescript for both React Native and web browsers using the same code._
 
 :point_right: [react-native-css-modules-with-typescript-example](https://github.com/kristerkari/react-native-css-modules-with-typescript-example)
 
