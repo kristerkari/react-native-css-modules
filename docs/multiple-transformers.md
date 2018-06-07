@@ -1,6 +1,10 @@
+Before using this guide please make sure that you have already done the basic setup for React Native CSS modules.
+
 ### Using CSS and Sass in the same project
 
-`.babelrc`
+In your project's root folder:
+
+Add more extensions to `.babelrc`:
 
 ```json
 {
@@ -17,7 +21,7 @@
 }
 ```
 
-`rn-cli.config.js`
+Configure `rn-cli.config.js` to use a custom transformer file and add more extensions:
 
 ```js
 module.exports = {
@@ -30,7 +34,7 @@ module.exports = {
 };
 ```
 
-`transformer.js`
+Create a `transformer.js` file:
 
 ```js
 // For React Native version 0.52 or later
