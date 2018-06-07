@@ -41,7 +41,9 @@ Make sure that `jsx` property is set to `react-native` in Typescript's `compiler
 }
 ```
 
-### Step 5: Setup transformer to support CSS modules and Typescript (change the code if you need PostCSS or Sass)
+### Step 5: Setup transformer to support CSS modules and Typescript
+
+_This example only shows how to setup CSS support. Have a look at the setup documentation if you need PostCSS, Sass, Less or Stylus support._
 
 In your project's root folder:
 
