@@ -9,6 +9,8 @@ _Have a look at the example app to see how you can use CSS modules and Typescrip
 - [Setup React Native CSS modules with CSS support](setup-css.md)
 - [Setup React Native CSS modules with PostCSS support](setup-postcss.md)
 - [Setup React Native CSS modules with Sass support](setup-sass.md)
+- [Setup React Native CSS modules with Less support](setup-less.md)
+- [Setup React Native CSS modules with Stylus support](setup-stylus.md)
 
 ### Step 2: Install Typescript dependencies
 
