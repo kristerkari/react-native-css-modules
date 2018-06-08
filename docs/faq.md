@@ -18,7 +18,7 @@ Absolutely! React Native's `StyleSheet` module implements a subset of CSS. The m
 
 React Native avoids many of the problems of scaling CSS. There is no CSS property inheritance between elements and no CSS selector specificity issues. You can not give a `<View>` font properties that would get inherited, but you can give them directly to a `<Text>` element.
 
-React Native's elements like `<Text>`, `<View>` and `<Image>` are simpler abstractions of the DOM elements that you use in browser. That means that implementing them in other platforms than React Native or the browser (e.g. React VR) is possible. Implementing the browser DOM would be way too complex.
+React Native's elements like `<Text>`, `<View>` and `<Image>` are simpler abstractions of the DOM elements that you use in browser. That means that implementing them in other platforms than React Native or the browser (e.g. React VR) is possible. Implementing the browser DOM in React Native would be way too complex.
 
 Have a look at these talks for more info:
 
