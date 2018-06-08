@@ -84,7 +84,7 @@ module.exports = {
 
 If you need support for Sass or other CSS pre/post processors, have a look at the documentation for a specific webpack loader, e.g. https://github.com/webpack-contrib/sass-loader
 
-### Step 4: Add index files for Web
+### Step 4: Add index.html and index.web.js
 
 In your project's root folder, add a file called `index.web.js`:
 
