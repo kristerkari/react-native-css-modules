@@ -28,6 +28,7 @@ Have a look at the example apps to see how you can use CSS modules for both Reac
 - **[Example app](https://github.com/kristerkari/react-native-css-modules-example)**
 - **[CSS Media Queries example app](https://github.com/kristerkari/react-native-css-modules-with-media-queries-example)**
 - **[CSS Viewport Units example app](https://github.com/kristerkari/react-native-css-modules-with-viewport-units-example)**
+- **[Example app using styleName syntax](https://github.com/kristerkari/react-native-css-modules-stylename-example)**
 - **[Typescript example app](https://github.com/kristerkari/react-native-css-modules-with-typescript-example)**
 
 ## Documentation
