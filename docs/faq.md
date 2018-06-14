@@ -5,8 +5,9 @@
 React Native's styling works a bit differently compared to regular CSS:
 
 - There is no cascade, CSS properties are not inherited from parent elements.
+- No complex CSS selectors. There is only support for simple CSS class selector that maps 1-to-1 with an element.
 - Many CSS properties are element specific, e.g. you can not give `Text` properties (`font-family`, etc.) to a `View` and vice versa.
-- React Native only implements a subset of CSS, the more complex CSS features are missing.
+- React Native only implements a subset of CSS. The more complex CSS features are left out, and what you get is a set of CSS features that work well to do styling in both browsers and native apps.
 - There are some new styling properties in React Native that do not exist in regular CSS.
 
 Even with the above differences, React Native's CSS implementation is still almost fully compatible with the one in Web browsers. You can think of it as a stricter subset of the CSS that is used in browsers.
