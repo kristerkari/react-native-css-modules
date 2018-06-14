@@ -1,5 +1,22 @@
 # Frequently Asked Questions
 
+## What is the difference with regular CSS and React Native's CSS?
+
+React Native's styling works a bit differently compared to regular CSS. There are some new styling properties that do not exist in regular CSS. Some properties can only be applied to a view, some properties only to a text element, so you should not think about it as something that is 100% compatible with regular CSS.
+
+The supported styling depends on the element that you want to style. You can have a look at the example apps, or this cheat sheet when writing your styles: https://github.com/vhpoet/react-native-styling-cheat-sheet
+
+If you plan to use the same CSS files for both React Native and Web, then I suggest that you build your app "React Native first". It is much easier to build the app with React Native's styling limitations, and then make it work for web using [React Native for Web](https://github.com/necolas/react-native-web).
+
+You can also use [Progressive Enhancement](https://en.wikipedia.org/wiki/Progressive_enhancement) thinking to build the common parts to be cross platform and adding some Web specific CSS styling.
+
+## What limitations does React Native CSS modules have compared to regular CSS modules?
+
+- No `:global` or `:local` keywords for CSS modules with React Native.
+- No support for using [classnames](https://github.com/JedWatson/classnames) module to handle multiple classnames (`classnames` outputs classnames as a string).
+- No way to pass options to Sass (`node-sass`) yet (planned).
+- No hot loading for Sass files that are imported with `@import` yet.
+
 ## I added a new CSS file and React Native throws an error for a missing module
 
 You need to restart React Native's packager when you add a new file to your project. This is currently a limitation that will hopefully be fixed in the future.

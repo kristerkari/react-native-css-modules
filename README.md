@@ -52,8 +52,7 @@ Have a look at the example apps to see how you can use CSS modules for both Reac
 
 - **[Frequently Asked Questions](docs/faq.md)**
 - **[Stylelint config for React Native CSS modules](https://github.com/kristerkari/stylelint-config-react-native-css-modules)**
-- **[List of CSS properties supported by React Native](https://github.com/vhpoet/react-native-styling-cheat-sheet)**
-- **[List of React Native CSS modules limitations](docs/limitations.md)**
+- **[List of CSS properties supported by React Native (Out of date)](https://github.com/vhpoet/react-native-styling-cheat-sheet)**
 
 ---
 
