@@ -1,5 +1,7 @@
 ## Setup CSS modules for React Native (with CSS Media Queries & CSS Viewport Units support)
 
+_This example only shows how to setup CSS support using the CSS transformer. Have a look at the setup documentation if you need PostCSS, Sass, Less or Stylus support._
+
 Following libraries are needed:
 
 - [react-native-css-transformer](https://github.com/kristerkari/react-native-css-transformer) - Transforms CSS to a React Native compatible style object and handles live reloading
