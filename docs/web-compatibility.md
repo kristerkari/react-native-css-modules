@@ -1,4 +1,4 @@
-## Setup browser compatibility for your project that uses React Native CSS modules
+## Setup browser compatibility for a project that uses React Native CSS modules
 
 What you need is:
 
