@@ -28,7 +28,7 @@ Have a look at the example apps to see how you can use CSS modules for both Reac
 - **[Example app](https://github.com/kristerkari/react-native-css-modules-example)**
 - **[CSS Media Queries example app](https://github.com/kristerkari/react-native-css-modules-with-media-queries-example)**
 - **[CSS Viewport Units example app](https://github.com/kristerkari/react-native-css-modules-with-viewport-units-example)**
-- **[Example app using styleName syntax](https://github.com/kristerkari/react-native-css-modules-stylename-example)**
+- **[Example app with styleName syntax](https://github.com/kristerkari/react-native-css-modules-stylename-example)**
 - **[Typescript example app](https://github.com/kristerkari/react-native-css-modules-with-typescript-example)**
 
 ## Documentation
@@ -40,20 +40,20 @@ Have a look at the example apps to see how you can use CSS modules for both Reac
 - **[Setup CSS modules with Sass support](docs/setup-sass.md)**
 - **[Setup CSS modules with Less support](docs/setup-less.md)**
 - **[Setup CSS modules with Stylus support](docs/setup-stylus.md)**
-- **[Setup CSS modules with responsive CSS support (CSS Media Queries & CSS Viewport Units)](docs/setup-responsive.md)**
+- **[Setup CSS modules with Responsive CSS support (CSS Media Queries & CSS Viewport Units)](docs/setup-responsive.md)**
 
 #### :books: Other setup docs
 
-- **[Setup CSS modules + Typescript](docs/setup-typescript.md)**
+- **[Setup CSS modules with Typescript support](docs/setup-typescript.md)**
 - **[Setup CSS modules with styleName attribute (use className as a string)](docs/setup-stylename.md)**
 - **[Use CSS and Sass in the same project](docs/multiple-transformers.md)**
-- **[Setup browser compatibility for your project that uses React Native CSS modules](docs/web-compatibility.md)**
+- **[Setup browser compatibility](docs/web-compatibility.md)**
 
 #### :books: Other documentation
 
 - **[Frequently Asked Questions](docs/faq.md)**
 - **[Stylelint config for React Native CSS modules](https://github.com/kristerkari/stylelint-config-react-native-css-modules)**
-- **[List of CSS properties supported by React Native (Out of date)](https://github.com/vhpoet/react-native-styling-cheat-sheet)**
+- **[List of CSS properties supported by React Native (out of date)](https://github.com/vhpoet/react-native-styling-cheat-sheet)**
 
 ---
 
