@@ -5,7 +5,7 @@ Setup [ESLint](https://eslint.org) and [stylelint](https://stylelint.io/) in you
 - ESLint is used to warn for unused CSS.
 - stylelint is used to make sure that the CSS is compatible with both Web and React Native, and to warn for duplicate properties, vendor prefixes, incompatible units, etc.
 
-### Step 1: Install ESLint and stylelint
+### Step 1: Install ESLint, stylelint and plugins
 
 ```sh
 npm install eslint eslint-plugin-css-modules stylelint stylelint-react-native stylelint-config-react-native-css-modules --save-dev
@@ -15,7 +15,7 @@ npm install eslint eslint-plugin-css-modules stylelint stylelint-react-native st
 
 Add these configs to your project's `package.json` (or use `.stylelintrc` and `.eslintrc` files).
 
-ESlint:
+**ESlint:**
 
 ```json
 "eslintConfig": {
@@ -35,7 +35,7 @@ ESlint:
 },
 ```
 
-stylelint:
+**stylelint:**
 
 ```json
 "stylelint": {
