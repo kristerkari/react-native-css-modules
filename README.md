@@ -48,6 +48,7 @@ Have a look at the example apps to see how you can use CSS modules for both Reac
 - **[Setup CSS modules with styleName attribute (use className as a string)](docs/setup-stylename.md)**
 - **[Use CSS and Sass in the same project](docs/multiple-transformers.md)**
 - **[Setup browser compatibility](docs/web-compatibility.md)**
+- **[Setup recommended linting (ESLint & stylelint)](docs/setup-linting.md)**
 
 #### :books: Other documentation
 
