@@ -37,8 +37,11 @@ module.exports = {
 Create a `transformer.js` file:
 
 ```js
-// For React Native version 0.52 or later
-var upstreamTransformer = require("metro/src/transformer");
+// For React Native version 0.56 or later
+var upstreamTransformer = require("metro/src/reactNativeTransformer");
+
+// For React Native version 0.52-0.55
+// var upstreamTransformer = require("metro/src/transformer");
 
 // For React Native version 0.47-0.51
 // var upstreamTransformer = require("metro-bundler/src/transformer");
