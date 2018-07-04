@@ -31,7 +31,9 @@ You need to restart React Native's packager when you add a new file to your proj
 
 ## How do I use multiple classes for an element?
 
-You can use either the `[styles.class1, styles.class2].join` or the template literal syntax. Have a look at the documentation over here: [babel-plugin-react-native-classname-to-style#multiple-classes](https://github.com/kristerkari/babel-plugin-react-native-classname-to-style#multiple-classes)
+You can use either the `[styles.class1, styles.class2].join` or the template literal syntax. Have a look at the documentation over here: [babel-plugin-react-native-classname-to-style#multiple-classes](https://github.com/kristerkari/babel-plugin-react-native-classname-to-style#multiple-classes).
+
+You can also use the `styleName` syntax, which supports multiple classnames: [babel-plugin-react-native-stylename-to-style](https://github.com/kristerkari/babel-plugin-react-native-stylename-to-style)
 
 ## CSS transitions, animations and gradients are missing
 
