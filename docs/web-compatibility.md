@@ -15,13 +15,21 @@ What you need is:
 
 ### Step 2: Install Webpack + React Native for Web
 
-Install Webpack dependencies:
+**Install Webpack dependencies:**
+
+for React Native v0.56 or newer (uses Babel 7):
+
+```sh
+npm install babel-loader babel-core@7.0.0-bridge.0 @babel/preset-env babel-preset-react@7.0.0-beta.3 webpack webpack-cli css-loader react-hot-loader style-loader webpack-dev-server --save-dev
+```
+
+for React Native v0.55 or older (uses Babel 6):
 
 ```sh
 npm install babel-loader babel-core babel-preset-env babel-preset-react webpack webpack-cli css-loader react-hot-loader style-loader webpack-dev-server --save-dev
 ```
 
-Install React Native for Web dependencies:
+**Install React Native for Web dependencies:**
 
 ```sh
 npm install react-art react-dom react-native-web --save
@@ -30,6 +38,8 @@ npm install react-art react-dom react-native-web --save
 ### Step 3: Add Webpack config
 
 In your project's root folder, add a file called `webpack.config.js`:
+
+If you are using React Native v0.55 or older, you need to change `"@babel/preset-env"` to `"babel-preset-env"` in `babel-loader` settings.
 
 ```js
 const webpack = require("webpack");
@@ -51,7 +61,7 @@ module.exports = {
         loader: "babel-loader",
         query: {
           babelrc: false,
-          presets: ["babel-preset-env", "react", "react-native"],
+          presets: ["@babel/preset-env", "react", "react-native"],
           plugins: ["react-hot-loader/babel"]
         }
       },
