@@ -39,7 +39,23 @@ npm install react-art react-dom react-native-web --save
 
 In your project's root folder, add a file called `webpack.config.js`:
 
-If you are using React Native v0.55 or older, you need to change `"@babel/preset-env"` to `"babel-preset-env"` in `babel-loader` settings.
+**For React Native v0.56:**
+
+Use the config below, but change `babel-loader`'s presets to:
+
+```js
+presets: ["@babel/preset-env", "react", "react-native"];
+```
+
+**For React Native v0.55 or older:**
+
+Use the config below, but change `babel-loader`'s presets to:
+
+```js
+presets: ["babel-preset-env", "react", "react-native"];
+```
+
+**For React Native v0.57 or newer:**
 
 ```js
 const webpack = require("webpack");
@@ -61,7 +77,11 @@ module.exports = {
         loader: "babel-loader",
         query: {
           babelrc: false,
-          presets: ["@babel/preset-env", "react", "react-native"],
+          presets: [
+            "@babel/preset-env",
+            "react",
+            "module:metro-react-native-babel-preset"
+          ],
           plugins: ["react-hot-loader/babel"]
         }
       },

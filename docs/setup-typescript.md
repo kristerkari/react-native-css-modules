@@ -14,6 +14,10 @@ _Have a look at the example app to see how you can use CSS modules and Typescrip
 
 ### Step 2: Install Typescript dependencies
 
+_This step is not needed if you are using React Native v0.57 or newer._
+
+#### For React Native v0.56 or older (Typescript is supported out-of-the-box by React Native 0.57+)
+
 ```
 npm install react-native-typescript-transformer typescript --save-dev
 ```
@@ -42,6 +46,10 @@ Make sure that `jsx` property is set to `react-native` in Typescript's `compiler
 ```
 
 ### Step 5: Setup transformer to support CSS modules and Typescript
+
+_This step is not needed if you are using React Native v0.57 or newer._
+
+#### For React Native v0.56 or older (Typescript is supported by React Native 0.57+)
 
 _This example only shows how to setup CSS support. Have a look at the setup documentation if you need PostCSS, Sass, Less or Stylus support._
 

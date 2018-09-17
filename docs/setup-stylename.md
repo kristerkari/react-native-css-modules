@@ -43,6 +43,30 @@ npm install babel-plugin-react-native-stylename-to-style babel-plugin-react-nati
 
 ### Step 4: Setup your project's `.babelrc`
 
+#### For React Native v0.57 or newer
+
+```json
+{
+  "presets": ["module:metro-react-native-babel-preset"],
+  "plugins": [
+    [
+      "react-native-stylename-to-style",
+      {
+        "extensions": ["css"]
+      }
+    ],
+    [
+      "react-native-platform-specific-extensions",
+      {
+        "extensions": ["css"]
+      }
+    ]
+  ]
+}
+```
+
+#### For React Native v0.56 or older
+
 ```json
 {
   "presets": ["react-native"],
@@ -64,6 +88,29 @@ npm install babel-plugin-react-native-stylename-to-style babel-plugin-react-nati
 ```
 
 ### Step 5: Setup `rn-cli.config.js` in your project
+
+#### For React Native v0.57 or newer
+
+Add this to `rn-cli.config.js` in your project's root (create the file if you don't have one already):
+
+```js
+const { getDefaultConfig } = require("metro-config");
+module.exports = (async () => {
+  const {
+    resolver: { sourceExts }
+  } = await getDefaultConfig();
+  return {
+    transformer: {
+      babelTransformerPath: require.resolve("react-native-css-transformer")
+    },
+    resolver: {
+      sourceExts: [...sourceExts, "css"]
+    }
+  };
+})();
+```
+
+#### For React Native v0.56 or older
 
 Add this to `rn-cli.config.js` in your project's root (create the file if you don't have one already):
 

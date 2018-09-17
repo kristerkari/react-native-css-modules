@@ -47,6 +47,25 @@ Add your PostCSS configuration to [one of the supported config formats](https://
 
 > Remember to add additional extensions if needed.
 
+#### For React Native v0.57 or newer
+
+```json
+{
+  "presets": ["module:metro-react-native-babel-preset"],
+  "plugins": [
+    "react-native-classname-to-style",
+    [
+      "react-native-platform-specific-extensions",
+      {
+        "extensions": ["css", "pcss"]
+      }
+    ]
+  ]
+}
+```
+
+#### For React Native v0.56 or older
+
 ```json
 {
   "presets": ["react-native"],
@@ -63,6 +82,29 @@ Add your PostCSS configuration to [one of the supported config formats](https://
 ```
 
 ### Step 6: Setup `rn-cli.config.js` in your project
+
+#### For React Native v0.57 or newer
+
+Add this to `rn-cli.config.js` in your project's root (create the file if you don't have one already):
+
+```js
+const { getDefaultConfig } = require("metro-config");
+module.exports = (async () => {
+  const {
+    resolver: { sourceExts }
+  } = await getDefaultConfig();
+  return {
+    transformer: {
+      babelTransformerPath: require.resolve("./postcss-transformer.js")
+    },
+    resolver: {
+      sourceExts: [...sourceExts, "css", "pcss"]
+    }
+  };
+})();
+```
+
+#### For React Native v0.56 or older
 
 Add this to `rn-cli.config.js` in your project's root (create the file if you don't have one already):
 
@@ -93,8 +135,11 @@ module.exports = {
 Create `postcss-transformer.js` file to your project's root and specify supported extensions:
 
 ```js
-// For React Native version 0.52 or later
-var upstreamTransformer = require("metro/src/transformer");
+// For React Native version 0.56 or later
+var upstreamTransformer = require("metro/src/reactNativeTransformer");
+
+// For React Native version 0.52-0.55
+// var upstreamTransformer = require("metro/src/transformer");
 
 // For React Native version 0.47-0.51
 // var upstreamTransformer = require("metro-bundler/src/transformer");
