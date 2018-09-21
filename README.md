@@ -1,6 +1,6 @@
 # React Native CSS modules
 
-**Quick links:** **[Features](#features)** • **[Documentation](https://github.com/kristerkari/react-native-css-modules#documentation)** • **[Examples](#example-apps)**
+**Quick links:** **[Features](#features)** • **[Documentation](https://github.com/kristerkari/react-native-css-modules#documentation)** • **[Examples](#example-apps)** • **[Development](#development)**
 
 <a href="https://facebook.github.io/react-native/"><img src="images/react-native-logo.png" width="160"></a><img src="images/plus.svg" width="100"><a href="https://github.com/css-modules/css-modules"><img src="images/css-modules-logo.svg" width="170"></a>
 
@@ -20,6 +20,13 @@ So far the only way has been to use React Native's `style` property or any of th
 - :tophat: Support for `styleName` attribute that allows you to use CSS class names as strings, and allows hyphens in class names.
 - :package: [Typescript typings that are compatible with React Native CSS modules](https://github.com/kristerkari/react-native-types-for-css-modules)
 - :mag: [Custom stylelint config for React Native CSS modules](https://github.com/kristerkari/stylelint-config-react-native-css-modules)
+
+## Development
+
+To see which new features are being planned and what is in progress, please have a look at:
+[the development board](https://github.com/kristerkari/react-native-css-modules/projects/1)
+
+If you want to suggest a new feature or report a bug, please open a new issue.
 
 ## Example Apps
 
