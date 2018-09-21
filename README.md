@@ -23,8 +23,7 @@ So far the only way has been to use React Native's `style` property or any of th
 
 ## Development
 
-To see which new features are being planned and what is in progress, please have a look at:
-[the development board](https://github.com/kristerkari/react-native-css-modules/projects/1)
+To see which new features are being planned and what is in progress, please have a look at [the development board](https://github.com/kristerkari/react-native-css-modules/projects/1).
 
 If you want to suggest a new feature or report a bug, please open a new issue.
 
