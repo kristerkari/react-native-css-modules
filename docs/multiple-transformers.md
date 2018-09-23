@@ -35,6 +35,7 @@ Configure `rn-cli.config.js` to use a custom transformer file and add more exten
 
 ```js
 const { getDefaultConfig } = require("metro-config");
+
 module.exports = (async () => {
   const {
     resolver: { sourceExts }
