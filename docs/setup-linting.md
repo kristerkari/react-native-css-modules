@@ -21,7 +21,7 @@ Add these configs to your project's `package.json` (or use `.stylelintrc` and `.
 "eslintConfig": {
   "parserOptions": {
     "sourceType": "module",
-    "ecmaVersion": 6,
+    "ecmaVersion": 2017,
     "ecmaFeatures": {
       "jsx": true
     }
@@ -44,12 +44,6 @@ Add these configs to your project's `package.json` (or use `.stylelintrc` and `.
     "declaration-block-no-duplicate-properties": true,
     "no-duplicate-selectors": true,
     "no-extra-semicolons": true,
-    "unit-whitelist": [
-      "px",
-      "rem",
-      "deg",
-      "%"
-    ],
     "no-eol-whitespace": true,
     "no-missing-end-of-source-newline": true
   }
