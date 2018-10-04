@@ -8,7 +8,7 @@ Before using this guide please make sure that you have already done the basic se
 - [Setup React Native CSS modules with Less support](setup-less.md)
 - [Setup React Native CSS modules with Stylus support](setup-stylus.md)
 
-### Step 1: configure .babelrc and rn-cli.config.js
+### Step 1: configure `.babelrc` and `rn-cli.config.js`
 
 In your project's root folder:
 
