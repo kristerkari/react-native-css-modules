@@ -60,6 +60,8 @@ npm install babel-plugin-react-native-classname-to-dynamic-style babel-plugin-re
 }
 ```
 
+---
+
 #### For React Native v0.56 or older
 
 ```json
@@ -100,6 +102,8 @@ module.exports = (async () => {
   };
 })();
 ```
+
+---
 
 #### For React Native v0.56 or older
 

@@ -64,6 +64,8 @@ Add your PostCSS configuration to [one of the supported config formats](https://
 }
 ```
 
+---
+
 #### For React Native v0.56 or older
 
 ```json
@@ -104,6 +106,8 @@ module.exports = (async () => {
   };
 })();
 ```
+
+---
 
 #### For React Native v0.56 or older
 

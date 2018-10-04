@@ -58,6 +58,8 @@ npm install babel-plugin-react-native-classname-to-style babel-plugin-react-nati
 }
 ```
 
+---
+
 #### For React Native v0.56 or older
 
 ```json
@@ -98,6 +100,8 @@ module.exports = (async () => {
   };
 })();
 ```
+
+---
 
 #### For React Native v0.56 or older
 
