@@ -10,6 +10,8 @@ React Native does not offer any kind of built-in support for loading CSS from `.
 
 So far the only way has been to use React Native's `style` property or any of the available CSS-in-JS libraries. Now you can use `className` property and keep your styles in separate CSS files.
 
+You can style React Native components using CSS, PostCSS, Sass, Less or Stylus.
+
 ## Features
 
 - :tada: You can share your CSS modules between React Native and React Web by using `className` property in React Native, and by using [React Native for Web](https://github.com/necolas/react-native-web) for the browser.
