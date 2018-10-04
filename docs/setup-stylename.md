@@ -2,6 +2,8 @@
 
 The `styleName` attribute and syntax are based on [babel-plugin-react-css-modules](https://github.com/gajus/babel-plugin-react-css-modules#conventions).
 
+_This example only shows how to setup CSS support using the CSS transformer. Have a look at the setup documentation if you need PostCSS, Sass, Less or Stylus support (use a different transformer and file extensions)._
+
 Following libraries are needed:
 
 - [react-native-css-transformer](https://github.com/kristerkari/react-native-css-transformer) - Transforms CSS to a React Native compatible style object and handles live reloading
