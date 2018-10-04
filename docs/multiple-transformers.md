@@ -51,6 +51,8 @@ module.exports = (async () => {
 })();
 ```
 
+---
+
 #### For React Native v0.56 or older
 
 Add more extensions to `.babelrc`:
