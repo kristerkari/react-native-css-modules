@@ -21,8 +21,7 @@ You can also use [Progressive Enhancement](https://en.wikipedia.org/wiki/Progres
 ## What limitations does React Native CSS modules have compared to regular CSS modules?
 
 - No `:global` or `:local` keywords for CSS modules with React Native.
-- No support for using [classnames](https://github.com/JedWatson/classnames) module to handle multiple classnames (`classnames` outputs classnames as a string).
-- No way to pass options to Sass (`node-sass`) yet (planned).
+- No support for using [classnames](https://github.com/JedWatson/classnames) module to handle multiple classnames (`classnames` outputs classnames as a string, which does not work in React Native).
 - No hot loading for Sass, LESS or Stylus files that are imported with `@import` yet.
 
 ## I added a new CSS file and React Native throws an error for a missing module
