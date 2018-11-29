@@ -23,11 +23,36 @@ You can style React Native components using CSS, PostCSS, Sass, Less or Stylus.
 - :package: [Typescript typings that are compatible with React Native CSS modules](https://github.com/kristerkari/react-native-types-for-css-modules)
 - :mag: [Custom stylelint config for React Native CSS modules](https://github.com/kristerkari/stylelint-config-react-native-css-modules)
 
-## Development
+## Example
 
-To see which new features are being planned and what is in progress, please have a look at [the development board](https://github.com/kristerkari/react-native-css-modules/projects/1).
+Using React Native CSS modules works almost the same way as using CSS modules with a Web React project. The main differences are that only simple class selectors (e.g. `.myClass`) are supported and that React Native only supports a subset of CSS properties for styling.
 
-If you want to suggest a new feature or report a bug, please open a new issue.
+For more info about the differences between using CSS modules in Web and React Native, have a look at [this explanation in the FAQ](docs/faq.md#what-is-the-difference-with-regular-css-and-react-natives-css).
+
+Here's an example using Sass:
+
+**App.scss**
+
+```scss
+.blue {
+  color: blue;
+}
+
+.blueText {
+  @extend .blue;
+  font-size: 18px;
+}
+```
+
+**App.js**
+
+```jsx
+import React from "react";
+import { Text } from "react-native";
+import styles from "./App.scss";
+
+const BlueText = () => <Text className={styles.blueText} />;
+```
 
 ## Example Apps
 
@@ -39,9 +64,15 @@ Have a look at the example apps to see how you can use CSS modules for both Reac
 - **[Example app with styleName syntax](https://github.com/kristerkari/react-native-css-modules-stylename-example)**
 - **[Typescript example app](https://github.com/kristerkari/react-native-css-modules-with-typescript-example)**
 
+## Development
+
+To see which new features are being planned and what is in progress, please have a look at [the development board](https://github.com/kristerkari/react-native-css-modules/projects/1).
+
+If you want to suggest a new feature or report a bug, please open a new issue.
+
 ## Documentation
 
-#### :books: Basic setup
+#### :books: Setup
 
 - **[Setup CSS modules with CSS support](docs/setup-css.md)**
 - **[Setup CSS modules with PostCSS support](docs/setup-postcss.md)**
@@ -49,13 +80,10 @@ Have a look at the example apps to see how you can use CSS modules for both Reac
 - **[Setup CSS modules with Less support](docs/setup-less.md)**
 - **[Setup CSS modules with Stylus support](docs/setup-stylus.md)**
 - **[Setup CSS modules with Responsive CSS support (CSS Media Queries & CSS Viewport Units)](docs/setup-responsive.md)**
-
-#### :books: Other setup docs
-
-- **[Setup recommended linting (ESLint & stylelint)](docs/setup-linting.md)**
 - **[Setup CSS modules with Typescript support](docs/setup-typescript.md)**
 - **[Setup CSS modules with styleName attribute (use className as a string)](docs/setup-stylename.md)**
 - **[Use CSS and Sass in the same project](docs/multiple-transformers.md)**
+- **[Setup recommended linting (ESLint & stylelint)](docs/setup-linting.md)**
 - **[Setup browser compatibility](docs/web-compatibility.md)**
 
 #### :books: Other documentation
