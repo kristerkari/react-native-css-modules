@@ -17,7 +17,7 @@
 
 ## Example
 
-Using React Native CSS modules works almost the same way as using CSS modules with a Web React project. The main differences are that only simple class selectors (e.g. `.myClass`) are supported and that React Native only supports a subset of CSS properties for styling.
+Using React Native CSS modules works almost the same way as using CSS modules with a Web React project. The main differences are that only simple class selectors (e.g. `.myClass`) are supported and that React Native only supports a subset of browser's CSS properties for styling.
 
 For more info about the differences between using CSS modules in Web and React Native, have a look at [this explanation in the FAQ](docs/faq.md#what-is-the-difference-with-regular-css-and-react-natives-css).
 
