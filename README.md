@@ -26,6 +26,10 @@ Here's an example using Sass:
 **App.scss**
 
 ```scss
+.container {
+  flex: 1;
+}
+
 .blue {
   color: blue;
 }
@@ -40,10 +44,15 @@ Here's an example using Sass:
 
 ```jsx
 import React from "react";
-import { Text } from "react-native";
+import { Text, View } from "react-native";
 import styles from "./App.scss";
 
-const BlueText = () => <Text className={styles.blueText} />;
+const App = () => (
+  <View className={styles.container}>
+    <Text className={styles.blueText}>Blue</Text>
+  </View>
+);
+export default App;
 ```
 
 ## Example Apps
