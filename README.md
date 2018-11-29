@@ -28,6 +28,8 @@ Here's an example using Sass:
 ```scss
 .container {
   flex: 1;
+  justify-content: center;
+  align-items: center;
 }
 
 .blue {
