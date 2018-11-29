@@ -1,16 +1,8 @@
 # React Native CSS modules
 
-**Quick links:** **[Features](#features)** • **[Documentation](https://github.com/kristerkari/react-native-css-modules#documentation)** • **[Examples](#example-apps)** • **[Development](#development)**
+**Quick links:** **[Features](#features)** • **[Documentation](https://github.com/kristerkari/react-native-css-modules#documentation)** • **[Example](#example)** • **[Development](#development)**
 
 <a href="https://facebook.github.io/react-native/"><img src="images/react-native-logo.png" width="160"></a><img src="images/plus.svg" width="100"><a href="https://github.com/css-modules/css-modules"><img src="images/css-modules-logo.svg" width="170"></a>
-
-## Why?
-
-React Native does not offer any kind of built-in support for loading CSS from `.css` files and using it for styling.
-
-So far the only way has been to use React Native's `style` property or any of the available CSS-in-JS libraries. Now you can use `className` property and keep your styles in separate CSS files.
-
-You can style React Native components using CSS, PostCSS, Sass, Less or Stylus.
 
 ## Features
 
@@ -64,12 +56,6 @@ Have a look at the example apps to see how you can use CSS modules for both Reac
 - **[Example app with styleName syntax](https://github.com/kristerkari/react-native-css-modules-stylename-example)**
 - **[Typescript example app](https://github.com/kristerkari/react-native-css-modules-with-typescript-example)**
 
-## Development
-
-To see which new features are being planned and what is in progress, please have a look at [the development board](https://github.com/kristerkari/react-native-css-modules/projects/1).
-
-If you want to suggest a new feature or report a bug, please open a new issue.
-
 ## Documentation
 
 #### :books: Setup
@@ -91,6 +77,12 @@ If you want to suggest a new feature or report a bug, please open a new issue.
 - **[Frequently Asked Questions](docs/faq.md)**
 - **[Stylelint config for React Native CSS modules](https://github.com/kristerkari/stylelint-config-react-native-css-modules)**
 - **[List of CSS properties supported by React Native (out of date)](https://github.com/vhpoet/react-native-styling-cheat-sheet)**
+
+## Development
+
+To see which new features are being planned and what is in progress, please have a look at [the development board](https://github.com/kristerkari/react-native-css-modules/projects/1).
+
+If you want to suggest a new feature or report a bug, please open a new issue.
 
 ---
 

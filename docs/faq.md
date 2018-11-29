@@ -1,5 +1,11 @@
 # Frequently Asked Questions
 
+## Why was React Native CSS modules creatd?
+
+React Native does not offer any kind of built-in support for loading CSS from `.css` files and using it for styling.
+
+So far the only way has been to use React Native's `style` property or any of the available CSS-in-JS libraries. Now you can use `className` property and keep your styles in separate CSS files.
+
 ## What is the difference with regular CSS and React Native's CSS?
 
 React Native's styling works a bit differently compared to regular CSS:
