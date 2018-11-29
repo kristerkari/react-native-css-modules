@@ -1,6 +1,6 @@
 # Frequently Asked Questions
 
-## Why was React Native CSS modules creatd?
+## Why was React Native CSS modules project created?
 
 React Native does not offer any kind of built-in support for loading CSS from `.css` files and using it for styling.
 
