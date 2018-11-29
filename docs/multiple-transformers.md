@@ -1,6 +1,6 @@
 ### Using CSS and Sass (or some other CSS preprocessor) in the same project
 
-Before using this guide please make sure that you have already done the basic setup for React Native CSS modules:
+### Step 1: Setup React Native CSS modules
 
 - [Setup React Native CSS modules with CSS support](setup-css.md)
 - [Setup React Native CSS modules with PostCSS support](setup-postcss.md)
@@ -8,7 +8,7 @@ Before using this guide please make sure that you have already done the basic se
 - [Setup React Native CSS modules with Less support](setup-less.md)
 - [Setup React Native CSS modules with Stylus support](setup-stylus.md)
 
-### Step 1: configure `.babelrc` and `rn-cli.config.js`
+### Step 2: configure `.babelrc` and `rn-cli.config.js`
 
 In your project's root folder:
 
@@ -85,7 +85,7 @@ module.exports = {
 };
 ```
 
-### Step 2: configure transformer
+### Step 3: configure transformer
 
 Create a `transformer.js` file:
 
