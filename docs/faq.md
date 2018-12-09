@@ -24,9 +24,11 @@ If you plan to use the same CSS files for both React Native and Web, then I sugg
 
 You can also use [Progressive Enhancement](https://en.wikipedia.org/wiki/Progressive_enhancement) thinking to build the common parts to be cross platform and adding some Web specific CSS styling.
 
-## What limitations does React Native CSS modules have compared to regular CSS modules?
+## What limitations does React Native CSS modules have compared to Web CSS modules?
 
-- No `:global` or `:local` keywords for CSS modules with React Native.
+- No support for `:global` or `:local` keywords (there is not global scope in React Native, so distinction between local and global is not needed.)
+- No support for `composes` keyword (probably not worth it to support because of the complexity, you can use Sass/Less/Stylus instead).
+- No support for `:import` keyword (you can use Sass/Less/Stylus instead), but the `:export` keyword is supported.
 - No support for using [classnames](https://github.com/JedWatson/classnames) module to handle multiple classnames (`classnames` outputs classnames as a string, which does not work in React Native).
 - No hot loading for Sass, LESS or Stylus files that are imported with `@import` yet.
 
