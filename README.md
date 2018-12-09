@@ -63,7 +63,7 @@ You might also need to share you variables from a CSS/Sass/Less/Stylus file to J
 
 **colors.scss**
 
-```scss
+```
 $grey: #ccc;
 
 :export {
