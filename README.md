@@ -53,7 +53,37 @@ import styles from "./App.scss";
 
 const App = () => (
   <View className={styles.container}>
-    <Text className={styles.blueText}>Blue</Text>
+    <Text className={styles.blueText}>Blue text</Text>
+  </View>
+);
+export default App;
+```
+
+You might also need to share you variables from a CSS/Sass/Less/Stylus file to Javascript. To do that you can use the `:export` keyword:
+
+**colors.scss**
+
+```scss
+$grey: #ccc;
+
+:export {
+  grey: $grey;
+}
+```
+
+**App.js**
+
+```jsx
+import React from "react";
+import { Text, View } from "react-native";
+import colors from "./colors.scss";
+import styles from "./App.scss";
+
+const App = () => (
+  <View className={styles.container}>
+    <Text className={styles.blueText} style={{ color: colors.grey }}>
+      Grey text
+    </Text>
   </View>
 );
 export default App;
