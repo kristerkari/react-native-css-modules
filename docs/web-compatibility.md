@@ -72,7 +72,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js?$/,
+        test: /\.jsx?$/,
         exclude: /node_modules/,
         loader: "babel-loader",
         query: {
@@ -137,18 +137,16 @@ Also add a file called `index.html` to your project's root folder:
 ```html
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>AwesomeProject</title>
+    <meta charset="utf-8" />
+    <meta content="initial-scale=1,width=device-width" name="viewport" />
+  </head>
 
-<head>
-  <title>AwesomeProject</title>
-  <meta charset="utf-8" />
-  <meta content="initial-scale=1,width=device-width" name="viewport" />
-</head>
-
-<body>
-  <div id="react-app"></div>
-  <script type="text/javascript" src="/main.js"></script>
-</body>
-
+  <body>
+    <div id="react-app"></div>
+    <script type="text/javascript" src="/main.js"></script>
+  </body>
 </html>
 ```
 
