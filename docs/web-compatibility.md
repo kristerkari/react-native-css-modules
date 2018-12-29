@@ -15,24 +15,24 @@ What you need is:
 
 ### Step 2: Install Webpack + React Native for Web
 
-**Install Webpack dependencies:**
+#### Install Webpack dependencies
 
 for React Native v0.56 or newer (uses Babel 7):
 
 ```sh
-npm install babel-loader babel-core@7.0.0-bridge.0 @babel/preset-env babel-preset-react@7.0.0-beta.3 webpack webpack-cli css-loader react-hot-loader style-loader webpack-dev-server --save-dev
+yarn add babel-loader babel-core@7.0.0-bridge.0 @babel/preset-env babel-preset-react@7.0.0-beta.3 webpack webpack-cli css-loader react-hot-loader style-loader webpack-dev-server --dev
 ```
 
 for React Native v0.55 or older (uses Babel 6):
 
 ```sh
-npm install babel-loader babel-core babel-preset-env babel-preset-react webpack webpack-cli css-loader react-hot-loader style-loader webpack-dev-server --save-dev
+yarn add babel-loader babel-core babel-preset-env babel-preset-react webpack webpack-cli css-loader react-hot-loader style-loader webpack-dev-server --dev
 ```
 
-**Install React Native for Web dependencies:**
+#### Install React Native for Web dependencies
 
 ```sh
-npm install react-art react-dom react-native-web --save
+yarn add react-art react-dom react-native-web --save
 ```
 
 ### Step 3: Add Webpack config
@@ -162,4 +162,4 @@ In your project's `package.json`, add a new command called `web` to `scripts`, s
 
 ### Step 6: Start Webpack development server and open the project in a browser
 
-Run `npm run web` in a terminal window and if there are no warnings, open `http://localhost:8080` in a web browser to see your React Native project running in a browser environment.
+Run `yarn web` in a terminal window and if there are no warnings, open `http://localhost:8080` in a web browser to see your React Native project running in a browser environment.

@@ -28,7 +28,7 @@ cd AwesomeProject
 Start packager:
 
 ```sh
-npm start
+yarn start
 ```
 
 Run project on iOS simulator:
@@ -40,7 +40,7 @@ react-native run-ios
 ### Step 3: Install dependencies for React Native CSS modules
 
 ```sh
-npm install babel-plugin-react-native-stylename-to-style babel-plugin-react-native-platform-specific-extensions react-native-css-transformer --save-dev
+yarn add babel-plugin-react-native-stylename-to-style babel-plugin-react-native-platform-specific-extensions react-native-css-transformer --dev
 ```
 
 ### Step 4: Setup your project's `.babelrc`
@@ -190,7 +190,5 @@ export default class App extends Component<{}> {
 Restart React Native packager and clear it's cache (important) to see the styles that you added.
 
 ```sh
-npm start -- --reset-cache
+yarn start --reset-cache
 ```
-
-If it throws an error for missing `node_modules/react-native/local-cli/cli.js`, just run `npm install` and then try again.

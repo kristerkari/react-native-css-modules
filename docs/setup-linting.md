@@ -8,7 +8,7 @@ Setup [ESLint](https://eslint.org) and [stylelint](https://stylelint.io/) in you
 ### Step 1: Install ESLint, stylelint and plugins
 
 ```sh
-npm install eslint eslint-plugin-css-modules stylelint stylelint-react-native stylelint-config-react-native-css-modules --save-dev
+yarn add eslint eslint-plugin-css-modules stylelint stylelint-react-native stylelint-config-react-native-css-modules --dev
 ```
 
 ### Step 2: Add configs
@@ -64,4 +64,4 @@ _You can remove file extensions that you don't use from the stylelint command._
 
 ### Step 4: Run linters
 
-Run `npm run lint` in a terminal window to see if there are any linting errors or warnings.
+Run `yarn lint` in a terminal window to see if there are any linting errors or warnings.

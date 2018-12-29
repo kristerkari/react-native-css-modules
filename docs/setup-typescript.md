@@ -19,22 +19,10 @@ _If you want Typescript types (`.d.ts` files) being generated your CSS/Sass/Less
 #### For React Native v0.57 or newer
 
 ```
-npm install typescript --save-dev
-```
-
-or
-
-```
 yarn add typescript --dev
 ```
 
 #### For React Native v0.56 or older
-
-```
-npm install react-native-typescript-transformer typescript --save-dev
-```
-
-or
 
 ```
 yarn add react-native-typescript-transformer typescript --dev
@@ -60,6 +48,8 @@ Make sure that `jsx` property is set to `react-native` in Typescript's `compiler
 ```
 
 ### Step 5: Setup transformer to support CSS modules and Typescript
+
+#### For React Native v0.57 or newer
 
 _This step is not needed if you are using React Native v0.57 or newer._
 
