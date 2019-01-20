@@ -23,7 +23,7 @@ Using React Native CSS modules works almost the same way as using CSS modules wi
 
 For more info about the differences between using CSS modules in Web and React Native, have a look at [this explanation in the FAQ](docs/faq.md#what-is-the-difference-with-regular-css-and-react-natives-css).
 
-Here's an example using Sass:
+#### Basic example using Sass
 
 **App.scss**
 
@@ -58,6 +58,26 @@ const App = () => (
 );
 export default App;
 ```
+
+#### CSS media queries and CSS viewport units
+
+If you need CSS media queries or CSS viewport units, you need to do [the setup for responsive features](docs/setup-responsive.md).
+
+```scss
+.wrapper {
+  height: 10vh;
+  width: 10vw;
+}
+
+@media (min-width: 800px) {
+  .wrapper {
+    height: 20vh;
+    width: 20vw;
+  }
+}
+```
+
+#### Exporting variables
 
 You might also need to share you variables from a CSS/Sass/Less/Stylus file to Javascript. To do that you can use the `:export` keyword:
 
