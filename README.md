@@ -152,3 +152,9 @@ If you want to suggest a new feature or report a bug, please open a new issue.
 ## Special thanks
 
 The idea for React Native CSS modules comes from these projects that have made a lot of work for supporting CSS and CSS modules in React Native: [css-to-react-native](https://github.com/styled-components/css-to-react-native) and [react-native-sass-classname](https://github.com/daniloster/react-native-sass-classname). A big thanks to them!
+
+---
+
+### License
+
+[MIT](/LICENSE)
