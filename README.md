@@ -63,7 +63,7 @@ export default App;
 
 If you need CSS media queries or CSS viewport units, you need to do [the setup for responsive features](docs/setup-responsive.md).
 
-```scss
+```css
 .wrapper {
   height: 10vh;
   width: 10vw;
