@@ -41,9 +41,11 @@ react-native run-ios
 yarn add babel-plugin-react-native-classname-to-dynamic-style babel-plugin-react-native-platform-specific-extensions react-native-css-transformer --dev
 ```
 
-### Step 4: Setup your project's `.babelrc`
+### Step 4: Setup your project's Babel configuration
 
 #### For React Native v0.57 or newer
+
+`.babelrc`
 
 ```json
 {
@@ -64,6 +66,8 @@ yarn add babel-plugin-react-native-classname-to-dynamic-style babel-plugin-react
 
 #### For React Native v0.56 or older
 
+`.babelrc`
+
 ```json
 {
   "presets": ["react-native"],
@@ -79,9 +83,28 @@ yarn add babel-plugin-react-native-classname-to-dynamic-style babel-plugin-react
 }
 ```
 
+---
+
+#### For Expo
+
+`babel.config.js` (older Expo versions use `.babelrc`)
+
+```js
+module.exports = function(api) {
+  api.cache(true);
+  return {
+    presets: ["babel-preset-expo"],
+    plugins: [
+      "react-native-classname-to-dynamic-style",
+      ["react-native-platform-specific-extensions", { extensions: ["css"] }]
+    ]
+  };
+};
+```
+
 ### Step 5: Setup `rn-cli.config.js` in your project
 
-#### For React Native v0.57 or newer
+#### For React Native v0.57 or newer / Expo SDK v31.0.0 or newer
 
 Add this to `rn-cli.config.js` in your project's root (create the file if you don't have one already):
 
@@ -103,11 +126,23 @@ module.exports = (async () => {
 })();
 ```
 
+If you are using [Expo](https://expo.io/), you also need to add this to `app.json`:
+
+```json
+{
+  "expo": {
+    "packagerOpts": {
+      "config": "rn-cli.config.js"
+    }
+  }
+}
+```
+
 ---
 
 #### For React Native v0.56 or older
 
-Add this to `rn-cli.config.js` in your project's root (create the file if you don't have one already):
+If you are using React Native without Expo, add this to `rn-cli.config.js` in your project's root (create the file if you don't have one already):
 
 ```js
 module.exports = {
@@ -120,7 +155,9 @@ module.exports = {
 };
 ```
 
-...or if you are using [Expo](https://expo.io/), in `app.json`:
+#### Expo SDK v30.0.0 or older
+
+If you are using [Expo](https://expo.io/), instead of adding the `rn-cli.config.js` file, you need to add this to `app.json`:
 
 ```json
 {

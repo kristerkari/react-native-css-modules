@@ -85,7 +85,7 @@ yarn add babel-plugin-react-native-classname-to-style babel-plugin-react-native-
 
 #### For Expo
 
-`babel.config.js`
+`babel.config.js` (older Expo versions use `.babelrc`)
 
 ```js
 module.exports = function(api) {
@@ -141,7 +141,7 @@ If you are using [Expo](https://expo.io/), you also need to add this to `app.jso
 
 ---
 
-#### For React Native v0.56 or older / Expo SDK v30.0.0 or older
+#### For React Native v0.56 or older
 
 If you are using React Native without Expo, add this to `rn-cli.config.js` in your project's root (create the file if you don't have one already):
 
@@ -155,6 +155,8 @@ module.exports = {
   }
 };
 ```
+
+#### Expo SDK v30.0.0 or older
 
 If you are using [Expo](https://expo.io/), instead of adding the `rn-cli.config.js` file, you need to add this to `app.json`:
 

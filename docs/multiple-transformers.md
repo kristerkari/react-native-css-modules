@@ -71,7 +71,7 @@ module.exports = (async () => {
 
 ---
 
-#### For React Native v0.56 or older / Expo SDK v30.0.0 or older
+#### For React Native v0.56 or older
 
 Add more extensions to `.babelrc`:
 
@@ -103,7 +103,26 @@ module.exports = {
 };
 ```
 
-...or if you are using [Expo](https://expo.io/), to `app.json`:
+#### Expo SDK v30.0.0 or older
+
+Add more extensions to `.babelrc`:
+
+```json
+{
+  "presets": ["babel-preset-expo"],
+  "plugins": [
+    "react-native-classname-to-style",
+    [
+      "react-native-platform-specific-extensions",
+      {
+        "extensions": ["css", "scss", "sass"]
+      }
+    ]
+  ]
+}
+```
+
+Instead of adding the `rn-cli.config.js` file, you need to add this to `app.json`:
 
 ```json
 {
