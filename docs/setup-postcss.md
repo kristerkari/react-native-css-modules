@@ -43,11 +43,13 @@ yarn add babel-plugin-react-native-classname-to-style babel-plugin-react-native-
 
 Add your PostCSS configuration to [one of the supported config formats](https://github.com/michael-ciniawsky/postcss-load-config), e.g. `package.json`, `.postcssrc`, `postcss.config.js`, etc.
 
-### Step 5: Setup your project's `.babelrc`
+### Step 5: Setup your project's Babel configuration
 
 > Remember to add additional extensions if needed.
 
 #### For React Native v0.57 or newer
+
+`.babelrc`
 
 ```json
 {
@@ -68,6 +70,8 @@ Add your PostCSS configuration to [one of the supported config formats](https://
 
 #### For React Native v0.56 or older
 
+`.babelrc`
+
 ```json
 {
   "presets": ["react-native"],
@@ -83,9 +87,31 @@ Add your PostCSS configuration to [one of the supported config formats](https://
 }
 ```
 
+---
+
+#### For Expo
+
+`babel.config.js`
+
+```js
+module.exports = function(api) {
+  api.cache(true);
+  return {
+    presets: ["babel-preset-expo"],
+    plugins: [
+      "react-native-classname-to-style",
+      [
+        "react-native-platform-specific-extensions",
+        { extensions: ["css", "pcss"] }
+      ]
+    ]
+  };
+};
+```
+
 ### Step 6: Setup `rn-cli.config.js` in your project
 
-#### For React Native v0.57 or newer
+#### For React Native v0.57 or newer / Expo SDK v31.0.0 or newer
 
 Add this to `rn-cli.config.js` in your project's root (create the file if you don't have one already):
 
@@ -107,11 +133,23 @@ module.exports = (async () => {
 })();
 ```
 
+If you are using [Expo](https://expo.io/), you also need to add this to `app.json`:
+
+```json
+{
+  "expo": {
+    "packagerOpts": {
+      "config": "rn-cli.config.js"
+    }
+  }
+}
+```
+
 ---
 
-#### For React Native v0.56 or older
+#### For React Native v0.56 or older / Expo SDK v30.0.0 or older
 
-Add this to `rn-cli.config.js` in your project's root (create the file if you don't have one already):
+If you are using React Native without Expo, add this to `rn-cli.config.js` in your project's root (create the file if you don't have one already):
 
 ```js
 module.exports = {
@@ -124,7 +162,7 @@ module.exports = {
 };
 ```
 
-...or if you are using [Expo](https://expo.io/), in `app.json`:
+If you are using [Expo](https://expo.io/), instead of adding the `rn-cli.config.js` file, you need to add this to `app.json`:
 
 ```json
 {

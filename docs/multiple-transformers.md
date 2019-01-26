@@ -12,7 +12,7 @@
 
 In your project's root folder:
 
-#### For React Native v0.57 or newer
+#### For React Native v0.57 or newer / Expo SDK v31.0.0 or newer
 
 Add more extensions to `.babelrc`:
 
@@ -29,6 +29,24 @@ Add more extensions to `.babelrc`:
     ]
   ]
 }
+```
+
+... or if you are using [Expo](https://expo.io/), to `babel.config.js`
+
+```js
+module.exports = function(api) {
+  api.cache(true);
+  return {
+    presets: ["babel-preset-expo"],
+    plugins: [
+      "react-native-classname-to-style",
+      [
+        "react-native-platform-specific-extensions",
+        { extensions: ["css", "scss", "sass"] }
+      ]
+    ]
+  };
+};
 ```
 
 Configure `rn-cli.config.js` to use a custom transformer file and add more extensions:
@@ -53,7 +71,7 @@ module.exports = (async () => {
 
 ---
 
-#### For React Native v0.56 or older
+#### For React Native v0.56 or older / Expo SDK v30.0.0 or older
 
 Add more extensions to `.babelrc`:
 
@@ -83,6 +101,19 @@ module.exports = {
     return ["js", "jsx", "css", "scss", "sass"];
   }
 };
+```
+
+...or if you are using [Expo](https://expo.io/), to `app.json`:
+
+```json
+{
+  "expo": {
+    "packagerOpts": {
+      "sourceExts": ["js", "jsx", "css", "scss", "sass"],
+      "transformer": "./transformer.js"
+    }
+  }
+}
 ```
 
 ### Step 3: configure transformer
