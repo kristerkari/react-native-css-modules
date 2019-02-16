@@ -8,7 +8,7 @@
 - [Setup React Native CSS modules with Less support](setup-less.md)
 - [Setup React Native CSS modules with Stylus support](setup-stylus.md)
 
-### Step 2: configure `.babelrc` and `rn-cli.config.js`
+### Step 2: Modify Babel configuration
 
 In your project's root folder:
 
@@ -49,7 +49,55 @@ module.exports = function(api) {
 };
 ```
 
-Configure `rn-cli.config.js` to use a custom transformer file and add more extensions:
+---
+
+#### For React Native v0.56 or older
+
+Add more extensions to `.babelrc`:
+
+```json
+{
+  "presets": ["react-native"],
+  "plugins": [
+    "react-native-classname-to-style",
+    [
+      "react-native-platform-specific-extensions",
+      {
+        "extensions": ["css", "scss", "sass"]
+      }
+    ]
+  ]
+}
+```
+
+---
+
+#### For Expo SDK v30.0.0 or older
+
+Add more extensions to `.babelrc`:
+
+```json
+{
+  "presets": ["babel-preset-expo"],
+  "plugins": [
+    "react-native-classname-to-style",
+    [
+      "react-native-platform-specific-extensions",
+      {
+        "extensions": ["css", "scss", "sass"]
+      }
+    ]
+  ]
+}
+```
+
+### Step 3: Modify Metro bundler configuration
+
+In your project's root folder:
+
+#### For React Native v0.57 or newer / Expo SDK v31.0.0 or newer
+
+Configure `metro.config.js` to use a custom transformer file and add more extensions:
 
 ```js
 const { getDefaultConfig } = require("metro-config");
@@ -73,23 +121,6 @@ module.exports = (async () => {
 
 #### For React Native v0.56 or older
 
-Add more extensions to `.babelrc`:
-
-```json
-{
-  "presets": ["react-native"],
-  "plugins": [
-    "react-native-classname-to-style",
-    [
-      "react-native-platform-specific-extensions",
-      {
-        "extensions": ["css", "scss", "sass"]
-      }
-    ]
-  ]
-}
-```
-
 Configure `rn-cli.config.js` to use a custom transformer file and add more extensions:
 
 ```js
@@ -103,26 +134,11 @@ module.exports = {
 };
 ```
 
-#### Expo SDK v30.0.0 or older
+---
 
-Add more extensions to `.babelrc`:
+#### For Expo SDK v30.0.0 or older
 
-```json
-{
-  "presets": ["babel-preset-expo"],
-  "plugins": [
-    "react-native-classname-to-style",
-    [
-      "react-native-platform-specific-extensions",
-      {
-        "extensions": ["css", "scss", "sass"]
-      }
-    ]
-  ]
-}
-```
-
-Instead of adding the `rn-cli.config.js` file, you need to add this to `app.json`:
+Configure `app.json` to use a custom transformer file and add more extensions:
 
 ```json
 {
@@ -135,13 +151,16 @@ Instead of adding the `rn-cli.config.js` file, you need to add this to `app.json
 }
 ```
 
-### Step 3: configure transformer
+### Step 4: configure transformer
 
 Create a `transformer.js` file:
 
 ```js
-// For React Native version 0.56 or later
-var upstreamTransformer = require("metro/src/reactNativeTransformer");
+// For React Native version 0.59 or later
+var upstreamTransformer = require("metro-react-native-babel-transformer");
+
+// For React Native version 0.56-0.58
+// var upstreamTransformer = require("metro/src/reactNativeTransformer");
 
 // For React Native version 0.52-0.55
 // var upstreamTransformer = require("metro/src/transformer");

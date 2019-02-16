@@ -41,7 +41,7 @@ react-native run-ios
 yarn add babel-plugin-react-native-classname-to-dynamic-style babel-plugin-react-native-platform-specific-extensions react-native-css-transformer --dev
 ```
 
-### Step 4: Setup your project's Babel configuration
+### Step 4: Setup Babel configuration
 
 #### For React Native v0.57 or newer
 
@@ -102,11 +102,11 @@ module.exports = function(api) {
 };
 ```
 
-### Step 5: Setup `rn-cli.config.js` in your project
+### Step 5: Setup Metro bundler configuration
 
 #### For React Native v0.57 or newer / Expo SDK v31.0.0 or newer
 
-Add this to `rn-cli.config.js` in your project's root (create the file if you don't have one already):
+Add this to `metro.config.js` in your project's root (create the file if you don't have one already):
 
 ```js
 const { getDefaultConfig } = require("metro-config");
@@ -132,7 +132,7 @@ If you are using [Expo](https://expo.io/), you also need to add this to `app.jso
 {
   "expo": {
     "packagerOpts": {
-      "config": "rn-cli.config.js"
+      "config": "metro.config.js"
     }
   }
 }
@@ -155,7 +155,9 @@ module.exports = {
 };
 ```
 
-#### Expo SDK v30.0.0 or older
+---
+
+#### For Expo SDK v30.0.0 or older
 
 If you are using [Expo](https://expo.io/), instead of adding the `rn-cli.config.js` file, you need to add this to `app.json`:
 

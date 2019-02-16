@@ -43,7 +43,7 @@ yarn add babel-plugin-react-native-classname-to-style babel-plugin-react-native-
 
 Add your PostCSS configuration to [one of the supported config formats](https://github.com/michael-ciniawsky/postcss-load-config), e.g. `package.json`, `.postcssrc`, `postcss.config.js`, etc.
 
-### Step 5: Setup your project's Babel configuration
+### Step 5: Setup Babel configuration
 
 > Remember to add additional extensions if needed.
 
@@ -109,11 +109,11 @@ module.exports = function(api) {
 };
 ```
 
-### Step 6: Setup `rn-cli.config.js` in your project
+### Step 6: Setup Metro bundler configuration
 
 #### For React Native v0.57 or newer / Expo SDK v31.0.0 or newer
 
-Add this to `rn-cli.config.js` in your project's root (create the file if you don't have one already):
+Add this to `metro.config.js` in your project's root (create the file if you don't have one already):
 
 ```js
 const { getDefaultConfig } = require("metro-config");
@@ -139,7 +139,7 @@ If you are using [Expo](https://expo.io/), you also need to add this to `app.jso
 {
   "expo": {
     "packagerOpts": {
-      "config": "rn-cli.config.js"
+      "config": "metro.config.js"
     }
   }
 }
@@ -162,7 +162,9 @@ module.exports = {
 };
 ```
 
-#### Expo SDK v30.0.0 or older
+---
+
+#### For Expo SDK v30.0.0 or older
 
 If you are using [Expo](https://expo.io/), instead of adding the `rn-cli.config.js` file, you need to add this to `app.json`:
 
@@ -180,8 +182,11 @@ If you are using [Expo](https://expo.io/), instead of adding the `rn-cli.config.
 Create `postcss-transformer.js` file to your project's root and specify supported extensions:
 
 ```js
-// For React Native version 0.56 or later
-var upstreamTransformer = require("metro/src/reactNativeTransformer");
+// For React Native version 0.59 or later
+var upstreamTransformer = require("metro-react-native-babel-transformer");
+
+// For React Native version 0.56-0.58
+// var upstreamTransformer = require("metro/src/reactNativeTransformer");
 
 // For React Native version 0.52-0.55
 // var upstreamTransformer = require("metro/src/transformer");
