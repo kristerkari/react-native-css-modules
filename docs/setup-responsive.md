@@ -36,7 +36,7 @@ yarn add babel-plugin-react-native-classname-to-dynamic-style --dev
 +    "react-native-classname-to-dynamic-style",
 ```
 
-### Step 4: Add some CSS with media queries to your project and use it inside a React component
+### Step 4: Add some CSS with Media Queries and Viewport Units to your project and use it inside a React component
 
 `styles.css`:
 
