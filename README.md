@@ -11,7 +11,7 @@ Style React Native components using CSS, PostCSS, Sass, Less or Stylus.
 - :tada: You can share your CSS modules between React Native and React Web by using `className` property in React Native, and by using [React Native for Web](https://github.com/necolas/react-native-web) for the browser.
 - :ok_hand: Supports [CSS](https://github.com/kristerkari/react-native-css-transformer), [PostCSS](https://github.com/kristerkari/react-native-postcss-transformer), [Sass](https://github.com/kristerkari/react-native-sass-transformer), [Less](https://github.com/kristerkari/react-native-less-transformer) and [Stylus](https://github.com/kristerkari/react-native-stylus-transformer).
 - :fire: CSS Hot loading (live reloading).
-- :computer: Supports responsive CSS features: CSS Media Queries and CSS Viewport Units.
+- :computer: Supports responsive CSS features: [CSS Media Queries](https://www.w3.org/TR/css3-mediaqueries/) and [CSS Viewport Units](https://www.w3.org/TR/css-values-4/#viewport-relative-lengths).
 - :globe_with_meridians: [Platform-specific extensions](https://facebook.github.io/react-native/docs/platform-specific-code.html#platform-specific-extensions) for CSS, e.g. `styles.ios.css`, `styles.android.css`, `styles.native.css`.
 - :tophat: Support for `styleName` attribute that allows you to use CSS class names as strings, and allows hyphens in class names.
 - :package: Suppports Typescript with [type definitions that are compatible with React Native CSS modules](https://github.com/kristerkari/react-native-types-for-css-modules)
