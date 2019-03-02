@@ -43,7 +43,7 @@ yarn add babel-plugin-react-native-classname-to-style babel-plugin-react-native-
 
 #### For React Native v0.57 or newer
 
-`.babelrc`
+`.babelrc` (or `babel.config.js`)
 
 ```json
 {

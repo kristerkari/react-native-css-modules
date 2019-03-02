@@ -14,7 +14,7 @@ In your project's root folder:
 
 #### For React Native v0.57 or newer / Expo SDK v31.0.0 or newer
 
-Add more extensions to `.babelrc`:
+Add more extensions to `.babelrc` (or `babel.config.js`):
 
 ```json
 {

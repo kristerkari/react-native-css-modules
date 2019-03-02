@@ -49,7 +49,7 @@ Add your PostCSS configuration to [one of the supported config formats](https://
 
 #### For React Native v0.57 or newer
 
-`.babelrc`
+`.babelrc` (or `babel.config.js`)
 
 ```json
 {
