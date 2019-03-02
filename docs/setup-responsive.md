@@ -17,7 +17,7 @@ Following library needs to be taken into use:
 Remove old one:
 
 ```sh
-yarn remove babel-plugin-react-native-classname-to-style --dev
+yarn remove babel-plugin-react-native-classname-to-style
 ```
 
 Add new one:
