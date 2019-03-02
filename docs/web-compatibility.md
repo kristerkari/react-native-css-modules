@@ -77,6 +77,7 @@ module.exports = {
         loader: "babel-loader",
         query: {
           babelrc: false,
+          configFile: false,
           presets: [
             "@babel/preset-env",
             "react",
