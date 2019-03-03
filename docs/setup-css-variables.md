@@ -2,6 +2,8 @@
 
 Using [postcss-css-variables](https://github.com/MadLittleMods/postcss-css-variables#readme) you can use most of CSS variables features, including selector cascading with some caveats, because this can only see the CSS, not the potentially dynamic HTML and DOM the CSS is applied to.
 
+If you are already using `react-native-css-transformer`, then need to switch to use `react-native-postcss-transformer` (please refer to the setup documentation) and add a PostCSS config with [postcss-css-variables](https://github.com/MadLittleMods/postcss-css-variables#readme) plugin.
+
 ### Step 1: Setup React Native CSS modules
 
 - [Setup React Native CSS modules with CSS support](setup-css.md)
