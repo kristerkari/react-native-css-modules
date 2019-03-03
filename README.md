@@ -62,7 +62,7 @@ export default App;
 
 #### CSS media queries and CSS viewport units
 
-If you need CSS media queries or CSS viewport units, you need to do [the setup for responsive features](docs/setup-responsive.md).
+If you need CSS media queries or CSS viewport units, please have a look ath the [setup guide for responsive CSS features](docs/setup-responsive.md).
 
 ```css
 .wrapper {
@@ -82,7 +82,7 @@ If you need CSS media queries or CSS viewport units, you need to do [the setup f
 
 CSS variables are not supported by default, but you can add support for them by using [PostCSS](https://postcss.org/) and [postcss-css-variables](https://github.com/MadLittleMods/postcss-css-variables#readme) plugin.
 
-Have a look at the [CSS variables setup guide](docs/setup-css-variables.md).
+Please have a look at the [CSS variables setup guide](docs/setup-css-variables.md).
 
 ```css
 :root {
