@@ -12,6 +12,7 @@ Style React Native components using CSS, PostCSS, Sass, Less or Stylus.
 - :ok_hand: Supports [CSS](https://github.com/kristerkari/react-native-css-transformer), [PostCSS](https://github.com/kristerkari/react-native-postcss-transformer), [Sass](https://github.com/kristerkari/react-native-sass-transformer), [Less](https://github.com/kristerkari/react-native-less-transformer) and [Stylus](https://github.com/kristerkari/react-native-stylus-transformer).
 - :fire: CSS Hot loading (live reloading).
 - :computer: Supports responsive CSS features: [CSS Media Queries](https://www.w3.org/TR/css3-mediaqueries/) and [CSS Viewport Units](https://www.w3.org/TR/css-values-4/#viewport-relative-lengths).
+- :sparkles: Supports [CSS variables](https://www.w3.org/TR/css-variables-1/).
 - :globe_with_meridians: [Platform-specific extensions](https://facebook.github.io/react-native/docs/platform-specific-code.html#platform-specific-extensions) for CSS, e.g. `styles.ios.css`, `styles.android.css`, `styles.native.css`.
 - :tophat: Support for `styleName` attribute that allows you to use CSS class names as strings, and allows hyphens in class names.
 - :package: Suppports Typescript with [type definitions that are compatible with React Native CSS modules](https://github.com/kristerkari/react-native-types-for-css-modules)
@@ -77,6 +78,22 @@ If you need CSS media queries or CSS viewport units, you need to do [the setup f
 }
 ```
 
+#### CSS variables
+
+CSS variables are not supported by default, but you can add support for them by using [PostCSS](https://postcss.org/) and [postcss-css-variables](https://github.com/MadLittleMods/postcss-css-variables#readme) plugin.
+
+Have a look at the [CSS variables setup guide](docs/setup-css-variables.md).
+
+```css
+:root {
+  --text-color: blue;
+}
+
+.blue {
+  color: var(--text-color);
+}
+```
+
 #### Exporting variables
 
 You might also need to share you variables from a CSS/Sass/Less/Stylus file to Javascript. To do that you can use the `:export` keyword:
@@ -129,6 +146,7 @@ Have a look at the example apps to see how you can use CSS modules for both Reac
 - **[Setup CSS modules with Less support](docs/setup-less.md)**
 - **[Setup CSS modules with Stylus support](docs/setup-stylus.md)**
 - **[Setup CSS modules with Responsive CSS support (CSS Media Queries & CSS Viewport Units)](docs/setup-responsive.md)**
+- **[Setup CSS modules with CSS variables support](docs/setup-css-variables.md)**
 - **[Setup CSS modules with Typescript support](docs/setup-typescript.md)**
 - **[Setup CSS modules with styleName attribute (use className as a string)](docs/setup-stylename.md)**
 - **[Use CSS and Sass in the same project](docs/multiple-transformers.md)**
