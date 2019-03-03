@@ -62,7 +62,7 @@ export default App;
 
 #### CSS media queries and CSS viewport units
 
-If you need CSS media queries or CSS viewport units, please have a look ath the [setup guide for responsive CSS features](docs/setup-responsive.md).
+If you need CSS media queries or CSS viewport units, please have a look at the [responsive CSS features setup guide](docs/setup-responsive.md).
 
 ```css
 .wrapper {
