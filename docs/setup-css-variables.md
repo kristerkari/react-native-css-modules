@@ -6,6 +6,12 @@ Using [postcss-css-variables](https://github.com/MadLittleMods/postcss-css-varia
 
 If you are already using `react-native-css-transformer`, then need to switch to use `react-native-postcss-transformer` (please refer to the setup documentation) and add a PostCSS config with [postcss-css-variables](https://github.com/MadLittleMods/postcss-css-variables#readme) plugin.
 
+### For Typescript users
+
+If you are using the typed transformers (e.g. generates `mystyles.d.scss` typings for Sass files), then you can use the normal transformers for Sass/Less/Stylus and a typed transformer for PostCSS. This is because with CSS variables you are using two transformers together and only one of the transformers needs to create the types file.
+
+For example when using Sass: `react-native-sass-transformer` + `react-native-typed-postcss-transformer`.
+
 ### Step 1: Setup React Native CSS modules
 
 - [Setup React Native CSS modules with CSS support](setup-css.md)
