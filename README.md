@@ -18,7 +18,7 @@ Style React Native components using CSS, PostCSS, Sass, Less or Stylus.
 - :package: Suppports Typescript with [type definitions that are compatible with React Native CSS modules](https://github.com/kristerkari/react-native-types-for-css-modules)
 - :mag: Lint your CSS using [a custom stylelint config for React Native CSS modules](https://github.com/kristerkari/stylelint-config-react-native-css-modules)
 
-## Example
+## Examples
 
 Using React Native CSS modules works almost the same way as using CSS modules with a Web React project, but there are some limitations. There is no support complex CSS selectors. Only simple CSS class selector (e.g. `.myClass`) is supported. React Native also only supports a subset of browser's CSS properties for styling.
 
@@ -94,7 +94,7 @@ Please have a look at the [CSS variables setup guide](docs/setup-css-variables.m
 }
 ```
 
-#### Exporting variables
+#### Exporting variables from CSS to Javascript
 
 You might also need to share you variables from a CSS/Sass/Less/Stylus file to Javascript. To do that you can use the `:export` keyword:
 
