@@ -15,7 +15,7 @@ Style React Native components using CSS, PostCSS, Sass, Less or Stylus.
 - :sparkles: Supports [CSS variables](https://alligator.io/css/css-variables/).
 - :globe_with_meridians: [Platform-specific extensions](https://facebook.github.io/react-native/docs/platform-specific-code.html#platform-specific-extensions) for CSS, e.g. `styles.ios.css`, `styles.android.css`, `styles.native.css`.
 - :tophat: Support for `styleName` attribute that allows you to use CSS class names as strings, and allows hyphens in class names (like the [className property](https://reactjs.org/docs/faq-styling.html#how-do-i-add-css-classes-to-components) in Web React).
-- :package: Suppports Typescript with [type definitions that are compatible with React Native CSS modules](https://github.com/kristerkari/react-native-types-for-css-modules)
+- :package: Suppports Typescript with [React Native type definitions that add support for React Native CSS modules](https://github.com/kristerkari/react-native-types-for-css-modules) and [CSS/Sass/LESS/PostCSS/Stylus transformers that automatically create typings for your CSS files](https://github.com/kristerkari/react-native-typed-sass-transformer).
 - :mag: Lint your CSS using [a custom stylelint config for React Native CSS modules](https://github.com/kristerkari/stylelint-config-react-native-css-modules)
 
 ## Examples
