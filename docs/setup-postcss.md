@@ -94,7 +94,7 @@ Add your PostCSS configuration to [one of the supported config formats](https://
 `babel.config.js` (older Expo versions use `.babelrc`)
 
 ```js
-module.exports = function(api) {
+module.exports = function (api) {
   api.cache(true);
   return {
     presets: ["babel-preset-expo"],
@@ -102,9 +102,9 @@ module.exports = function(api) {
       "react-native-classname-to-style",
       [
         "react-native-platform-specific-extensions",
-        { extensions: ["css", "pcss"] }
-      ]
-    ]
+        { extensions: ["css", "pcss"] },
+      ],
+    ],
   };
 };
 ```
@@ -120,15 +120,15 @@ const { getDefaultConfig } = require("metro-config");
 
 module.exports = (async () => {
   const {
-    resolver: { sourceExts }
+    resolver: { sourceExts },
   } = await getDefaultConfig();
   return {
     transformer: {
-      babelTransformerPath: require.resolve("./postcss-transformer.js")
+      babelTransformerPath: require.resolve("./postcss-transformer.js"),
     },
     resolver: {
-      sourceExts: [...sourceExts, "css", "pcss"]
-    }
+      sourceExts: [...sourceExts, "css", "pcss"],
+    },
   };
 })();
 ```
@@ -159,7 +159,7 @@ module.exports = {
   },
   getSourceExts() {
     return ["js", "jsx", "css", "pcss"]; // <-- Add other extensions if needed.
-  }
+  },
 };
 ```
 
@@ -201,8 +201,8 @@ var upstreamTransformer = require("metro-react-native-babel-transformer");
 var postcssTransformer = require("react-native-postcss-transformer");
 var postCSSExtensions = ["css", "pcss"]; // <-- Add other extensions if needed.
 
-module.exports.transform = function({ src, filename, options }) {
-  if (postCSSExtensions.some(ext => filename.endsWith("." + ext))) {
+module.exports.transform = function ({ src, filename, options }) {
+  if (postCSSExtensions.some((ext) => filename.endsWith("." + ext))) {
     return postcssTransformer.transform({ src, filename, options });
   }
   return upstreamTransformer.transform({ src, filename, options });
