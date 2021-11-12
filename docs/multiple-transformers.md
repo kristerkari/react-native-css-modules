@@ -34,7 +34,7 @@ Add more extensions to `.babelrc` (or `babel.config.js`):
 ... or if you are using [Expo](https://expo.io/), to `babel.config.js`
 
 ```js
-module.exports = function(api) {
+module.exports = function (api) {
   api.cache(true);
   return {
     presets: ["babel-preset-expo"],
@@ -42,9 +42,9 @@ module.exports = function(api) {
       "react-native-classname-to-style",
       [
         "react-native-platform-specific-extensions",
-        { extensions: ["css", "scss", "sass"] }
-      ]
-    ]
+        { extensions: ["css", "scss", "sass"] },
+      ],
+    ],
   };
 };
 ```
@@ -104,15 +104,15 @@ const { getDefaultConfig } = require("metro-config");
 
 module.exports = (async () => {
   const {
-    resolver: { sourceExts }
+    resolver: { sourceExts },
   } = await getDefaultConfig();
   return {
     transformer: {
-      babelTransformerPath: require.resolve("./transformer.js")
+      babelTransformerPath: require.resolve("./transformer.js"),
     },
     resolver: {
-      sourceExts: [...sourceExts, "css", "scss", "sass"]
-    }
+      sourceExts: [...sourceExts, "css", "scss", "sass"],
+    },
   };
 })();
 ```
@@ -130,7 +130,7 @@ module.exports = {
   },
   getSourceExts() {
     return ["js", "jsx", "css", "scss", "sass"];
-  }
+  },
 };
 ```
 
@@ -174,7 +174,7 @@ var upstreamTransformer = require("metro-react-native-babel-transformer");
 var sassTransformer = require("react-native-sass-transformer");
 var cssTransformer = require("react-native-css-transformer");
 
-module.exports.transform = function({ src, filename, options }) {
+module.exports.transform = function ({ src, filename, options }) {
   if (filename.endsWith(".scss") || filename.endsWith(".sass")) {
     return sassTransformer.transform({ src, filename, options });
   } else if (filename.endsWith(".css")) {

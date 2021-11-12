@@ -68,7 +68,7 @@ module.exports = {
   },
   getSourceExts() {
     return ["ts", "tsx", "css"];
-  }
+  },
 };
 ```
 
@@ -90,7 +90,7 @@ var upstreamTransformer = require("metro/src/reactNativeTransformer");
 var cssTransformer = require("react-native-css-transformer");
 var typescriptTransformer = require("react-native-typescript-transformer");
 
-module.exports.transform = function({ src, filename, options }) {
+module.exports.transform = function ({ src, filename, options }) {
   if (filename.endsWith(".css")) {
     return cssTransformer.transform({ src, filename, options });
   } else if (filename.endsWith(".ts") || filename.endsWith(".tsx")) {

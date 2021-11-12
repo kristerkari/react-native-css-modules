@@ -88,14 +88,14 @@ yarn add babel-plugin-react-native-classname-to-style babel-plugin-react-native-
 `babel.config.js` (older Expo versions use `.babelrc`)
 
 ```js
-module.exports = function(api) {
+module.exports = function (api) {
   api.cache(true);
   return {
     presets: ["babel-preset-expo"],
     plugins: [
       "react-native-classname-to-style",
-      ["react-native-platform-specific-extensions", { extensions: ["styl"] }]
-    ]
+      ["react-native-platform-specific-extensions", { extensions: ["styl"] }],
+    ],
   };
 };
 ```
@@ -111,15 +111,15 @@ const { getDefaultConfig } = require("metro-config");
 
 module.exports = (async () => {
   const {
-    resolver: { sourceExts }
+    resolver: { sourceExts },
   } = await getDefaultConfig();
   return {
     transformer: {
-      babelTransformerPath: require.resolve("react-native-stylus-transformer")
+      babelTransformerPath: require.resolve("react-native-stylus-transformer"),
     },
     resolver: {
-      sourceExts: [...sourceExts, "styl"]
-    }
+      sourceExts: [...sourceExts, "styl"],
+    },
   };
 })();
 ```
@@ -150,7 +150,7 @@ module.exports = {
   },
   getSourceExts() {
     return ["js", "jsx", "styl"];
-  }
+  },
 };
 ```
 

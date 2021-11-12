@@ -63,11 +63,11 @@ const webpack = require("webpack");
 module.exports = {
   entry: ["react-hot-loader/patch", "./index.web.js"],
   devServer: {
-    hot: true
+    hot: true,
   },
   plugins: [
     new webpack.NamedModulesPlugin(),
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin(),
   ],
   module: {
     rules: [
@@ -81,35 +81,35 @@ module.exports = {
           presets: [
             "@babel/preset-env",
             "react",
-            "module:metro-react-native-babel-preset"
+            "module:metro-react-native-babel-preset",
           ],
-          plugins: ["react-hot-loader/babel"]
-        }
+          plugins: ["react-hot-loader/babel"],
+        },
       },
       {
         test: /\.css$/,
         use: [
           {
-            loader: "style-loader"
+            loader: "style-loader",
           },
           {
             loader: "css-loader",
             options: {
               modules: true,
-              localIdentName: "[path]___[name]__[local]___[hash:base64:5]"
-            }
-          }
-        ]
-      }
-    ]
+              localIdentName: "[path]___[name]__[local]___[hash:base64:5]",
+            },
+          },
+        ],
+      },
+    ],
   },
   resolve: {
     alias: {
-      "react-native": "react-native-web"
+      "react-native": "react-native-web",
     },
     extensions: [".web.js", ".js", ".web.jsx", ".jsx"],
-    mainFields: ["browser", "main"]
-  }
+    mainFields: ["browser", "main"],
+  },
 };
 ```
 
@@ -125,7 +125,7 @@ import App from "./App";
 
 AppRegistry.registerComponent("AwesomeProject", () => App);
 AppRegistry.runApplication("AwesomeProject", {
-  rootTag: document.getElementById("react-app")
+  rootTag: document.getElementById("react-app"),
 });
 
 if (module.hot) {
