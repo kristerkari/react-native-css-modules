@@ -36,7 +36,7 @@ react-native run-ios
 ### Step 3: Install dependencies for React Native CSS modules
 
 ```sh
-yarn add babel-plugin-react-native-classname-to-style babel-plugin-react-native-platform-specific-extensions react-native-sass-transformer node-sass --dev
+yarn add babel-plugin-react-native-classname-to-style babel-plugin-react-native-platform-specific-extensions react-native-sass-transformer sass --dev
 ```
 
 ### Step 4: Setup Babel configuration
